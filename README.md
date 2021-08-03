@@ -28,7 +28,7 @@ Use this command if you don't have the repository (folder) on your local machine
 
 ### Need a branch that doesn't exist anywhere?
 Use this command if you need to create a branch that does not currently exist:  
-- $ `git checkout -b <topic-initial1-initial2>` (ex. intro-a-s)
+- $ `git checkout -b <topic-initial1-initial2>` (ex. migrations-a-s)
 
 
 ### Need a branch that is on GitHub but not on your local?
