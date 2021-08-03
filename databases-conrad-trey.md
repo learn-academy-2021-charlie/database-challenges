@@ -121,10 +121,24 @@ LIMIT 1;
 
 Of the 10 least populated countries with permament residents (a non-zero population), which has the largest surfacearea? (HINT: Svalbard and Jan Mayen)
 
+WITH smallest_countries AS (SELECT name, population, surfacearea
+FROM country
+WHERE population != 0
+ORDER BY population
+LIMIT 10)
+SELECT name, population, surfacearea
+FROM smallest_countries
+ORDER BY surfacearea DESC
+LIMIT 1;
+
 Aggregate Functions: GROUP BY
 
 Which region has the highest average gnp? (HINT: North America)
-
+SELECT region, AVG(gnp)
+FROM country
+GROUP BY region
+ORDER BY AVG(gnp) DESC
+LIMIT 1;
 Who is the most influential head of state measured by surface area? (HINT: Elisabeth II)
 
 What is the average life expectancy for all continents?
