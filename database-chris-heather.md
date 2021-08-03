@@ -50,10 +50,49 @@ Which countries achieved independence after 1945 and are not some kind of republ
   
 ORDER BY
 Which fifteen countries have the lowest life expectancy? (HINT: starts with Zambia, ends with Sierra Leonne)
+
+SELECT name, lifeexpectancy
+FROM country
+WHERE lifeexpectancy IS NOT null
+ORDER BY lifeexpectancy 
+limit 15;
+
 Which fifteen countries have the highest life expectancy? (HINT: starts with Andorra, ends with Spain)
+
+SELECT name, lifeexpectancy
+FROM country
+WHERE lifeexpectancy IS NOT null
+ORDER BY lifeexpectancy DESC
+limit 15;
+
+
 Which five countries have the lowest population density (density = population / surfacearea)? (HINT: starts with Greenland)
+
+SELECT name, population, surfacearea, 
+population/surfacearea AS density
+FROM country
+WHERE population > 0
+ORDER BY density 
+LIMIT 5;
+
 Which countries have the highest population density?(HINT: starts with Macao)
+
+SELECT name, population, surfacearea, 
+population/surfacearea AS density
+FROM country
+WHERE population > 0
+ORDER BY density DESC
+LIMIT 5;
+
+
 Which is the smallest country by area? (HINT: .4)
+
+SELECT name, surfacearea
+FROM country
+ORDER BY surfacearea
+limit 1;
+
+
 Which is the smallest country by population? (HINT: 50)?
 Which is the biggest country by area? (HINT: 1.70754e+07)
 Which is the biggest country by population? (HINT: 1277558000)
