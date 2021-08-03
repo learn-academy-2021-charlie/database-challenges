@@ -56,8 +56,25 @@ WHERE
 
 -- ORDER BY
 -- Which fifteen countries have the lowest life expectancy? (HINT: starts with Zambia, ends with Sierra Leonne)
+
+SELECT name, lifeexpectancy
+FROM country
+-- sort by life expectancy
+ORDER BY lifeexpectancy
+LIMIT 15
+
 -- Which fifteen countries have the highest life expectancy? (HINT: starts with Andorra, ends with Spain)
+
+SELECT name, lifeexpectancy
+FROM country
+WHERE lifeexpectancy IS NOT NULL
+-- sort by life expectancy
+ORDER BY lifeexpectancy DESC
+LIMIT 15
 -- Which five countries have the lowest population density (density = population / surfacearea)? (HINT: starts with Greenland)
+
+
+
 -- Which countries have the highest population density?(HINT: starts with Macao)
 -- Which is the smallest country by area? (HINT: .4)
 -- Which is the smallest country by population? (HINT: 50)?
