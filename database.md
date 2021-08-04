@@ -98,3 +98,19 @@ SELECT population, headofstate
 FROM country
 ORDER BY population DESC
 LIMIT 1
+
+# Of the countries with the top 10 gnp, which has the smallest population? (HINT: Canada) -->
+WITH populated_countries AS (
+	SELECT name, population, gnp
+	FROM country
+	WHERE population > 0
+	ORDER BY gnp DESC
+	LIMIT 10
+	)
+SELECT name, population, gnp
+FROM populated_countries
+ORDER BY population ASC
+LIMIT 1;
+# Of the 10 least populated countries with permament residents (a non-zero population), which has the 
+
+# largest surfacearea? (HINT: Svalbard and Jan Mayen)
