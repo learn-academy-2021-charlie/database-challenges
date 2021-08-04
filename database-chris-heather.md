@@ -90,7 +90,8 @@ Which is the smallest country by area? (HINT: .4)
 SELECT name, surfacearea
 FROM country
 ORDER BY surfacearea
-limit 1;
+limit 1
+;
 
 
 Which is the smallest country by population? (HINT: 50)?
