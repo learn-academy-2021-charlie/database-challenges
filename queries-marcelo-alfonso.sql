@@ -77,6 +77,7 @@ AS density -- we have to make an alias to 'store' the values for density
 FROM country
 WHERE population > 0
 ORDER BY density;
+LIMIT 5
 
 -- Which countries have the highest population density?(HINT: starts with Macao)
 SELECT name, population, surfacearea, population / surfacearea
@@ -118,6 +119,7 @@ WITH rich_countries AS (
 SELECT *
 FROM rich_countries
 ORDER BY population
+LIMIT 1 -- be specific!!!!!
 -- Of the 10 least populated countries with permament residents (a non-zero population), which has the largest surfacearea? (HINT: Svalbard and Jan Mayen)
 WITH nobody_there AS (
 	SELECT name, population, surfacearea
@@ -129,18 +131,31 @@ WITH nobody_there AS (
 SELECT *
 FROM nobody_there
 ORDER BY surfacearea DESC
+LIMIT 1
 
 -- Aggregate Functions: GROUP BY
 -- Which region has the highest average gnp? (HINT: North America)
 -- how do I access the name?
-SELECT MAX(gnp)
-FROM country;
+
+SELECT region, AVG(gnp)
+FROM country
+GROUP BY region
+ORDER BY AVG(gnp) DESC
+LIMIT 1;
+
 
 -- Who is the most influential head of state measured by surface area? (HINT: Elisabeth II)
+--The wrong write answer
 SELECT headofstate, COUNT(*)
 FROM country
+GROUP BY headofstate 
+ORDER BY count DESC 
+LIMIT 1;
+-- The write answer!
+SELECT headofstate, SUM(surfacearea)
+FROM country
 GROUP BY headofstate
-ORDER BY count DESC
+ORDER BY SUM(surfacearea) DESC
 LIMIT 1;
 
 -- What is the average life expectancy for all continents?
