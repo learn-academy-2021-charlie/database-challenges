@@ -33,6 +33,7 @@ $ rails c
 - Add five family members into the Person table in the Rails console.
 ```ruby
 3.0.0 :006 >Person.create first_name: "Jon", last_name: "Smith", phone: "(555)-555-5555"
+# Repeat-->Create four more people
 ```
 - Retrieve all the items in the database.
 ```ruby
