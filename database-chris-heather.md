@@ -47,14 +47,14 @@ Which countries achieved independence after 1945 and are not some kind of republ
   WHERE governmentform  NOT LIKE '%Republic%'
   AND indepyear > 1945;
 
-  
+
 ORDER BY
 Which fifteen countries have the lowest life expectancy? (HINT: starts with Zambia, ends with Sierra Leonne)
 
 SELECT name, lifeexpectancy
 FROM country
 WHERE lifeexpectancy IS NOT null
-ORDER BY lifeexpectancy 
+ORDER BY lifeexpectancy
 limit 15;
 
 Which fifteen countries have the highest life expectancy? (HINT: starts with Andorra, ends with Spain)
@@ -68,16 +68,16 @@ limit 15;
 
 Which five countries have the lowest population density (density = population / surfacearea)? (HINT: starts with Greenland)
 
-SELECT name, population, surfacearea, 
+SELECT name, population, surfacearea,
 population/surfacearea AS density
 FROM country
 WHERE population > 0
-ORDER BY density 
+ORDER BY density
 LIMIT 5;
 
 Which countries have the highest population density?(HINT: starts with Macao)
 
-SELECT name, population, surfacearea, 
+SELECT name, population, surfacearea,
 population/surfacearea AS density
 FROM country
 WHERE population > 0
@@ -99,7 +99,7 @@ Which is the smallest country by population? (HINT: 50)?
 SELECT name, population
 FROM country
 WHERE population > 0
-ORDER BY population 
+ORDER BY population
 limit 1;
 
 
@@ -161,13 +161,47 @@ ORDER BY surfacearea DESC
 Aggregate Functions: GROUP BY
 Which region has the highest average gnp? (HINT: North America)
 
-
+SELECT region, AVG(gnp)
+FROM country
+GROUP BY region
+ORDER BY AVG DESC;
 
 Who is the most influential head of state measured by surface area? (HINT: Elisabeth II)
+
+SELECT headofstate, SUM(surfacearea)
+FROM country
+GROUP BY headofstate
+ORDER BY SUM DESC;
+
 What is the average life expectancy for all continents?
+
+SELECT AVG(lifeexpectancy)
+FROM country;
+<!-- 66.48603611164265 -->
+
 What are the most common forms of government? (HINT: use count(*))
+
+SELECT governmentform, COUNT(*)
+FROM country
+GROUP BY governmentform
+ORDER BY COUNT DESC;
+<!-- Republic -->
+
 How many countries are in North America?
+
+SELECT region, COUNT(name)
+FROM country
+WHERE region = 'North America'
+GROUP BY region;
+<!-- 5 -->
+
 What is the total population of all continents?
+
+<!-- double check on this one -->
+SELECT SUM(population)
+FROM country;
+<!-- 6078749450 -->
+
 Stretch Challenges
 Which countries have the letter ‘z’ in the name? How many?
 Of the smallest 10 countries by area, which has the biggest gnp? (HINT: Macao)
