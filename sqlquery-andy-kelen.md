@@ -167,3 +167,65 @@ FROM country
 GROUP BY continent
 
 
+What are the most common forms of government? (HINT: use count(*))
+SELECT governmentform
+FROM country
+GROUP BY governmentform 
+ORDER BY COUNT(governmentform) DESC
+
+How many countries are in North America?
+SELECT count(*)
+FROM country
+WHERE region = 'North America'
+
+What is the total population of all continents?
+SELECT sum(population)
+FROM country
+GROUP BY continent
+
+Which countries have the letter ‘z’ in the name? How many?
+SELECT name
+FROM country
+WHERE name like '%z%'
+
+Of the smallest 10 countries by area, which has the biggest gnp? (HINT: Macao)
+WITH smallest_countries AS (SELECT name, surfacearea, gnp
+FROM country
+order by surfacearea
+limit 10)
+
+SELECT name
+FROM smallest_countries
+ORDER BY gnp DESC
+limit 1
+
+
+Of the smallest 10 countries by population, which has the biggest per capita gnp?
+
+
+WITH smallest_countries AS (SELECT name, population, gnp
+FROM country
+WHERE population > 0
+order by population
+limit 10)
+
+SELECT name 
+FROM smallest_countries
+ORDER BY gnp/population DESC
+limit 1
+
+
+Of the biggest 10 countries by area, which has the biggest gnp?
+
+WITH smallest_countries AS (SELECT name, surfacearea, gnp
+FROM country
+WHERE surfacearea > 0
+order by surfacearea DESC
+limit 10)
+
+SELECT name 
+FROM smallest_countries
+ORDER BY gnp/surfacearea DESC
+limit 1
+
+Of the biggest 10 countries by population, which has the biggest per capita gnp?
