@@ -89,7 +89,9 @@ $ rails c
 ## Stretch Challenges
 
 - Update all the family members with the same last_name as you, to have the same phone number as you.
-
+```ruby
+3.0.0 :035 >phone=Person.where last_name: "xu" phone.update phone: "123-456-7890"
+```
 - Remove all family members that do not have your last_name.
 ```ruby
 3.0.0 :035 > Person.where("last_name != 'xu'").destroy_all
