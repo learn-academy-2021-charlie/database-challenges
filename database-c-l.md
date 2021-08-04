@@ -193,3 +193,105 @@ SELECT name, gnp, population
 FROM gnp_population
 ORDER BY population;
 "Canada"	598862.00	31147000
+
+* Of the 10 least populated countries with permament residents (a non-zero population), which has the largest surfacearea? (HINT: Svalbard and Jan Mayen)
+
+WITH populated_countries AS (SELECT name, population, surfacearea
+FROM country
+WHERE population > 0
+ORDER BY population ASC
+LIMIT 10)
+
+SELECT name, population, surfacearea
+FROM populated_countries
+ORDER BY surfacearea DESC;
+
+"Svalbard and Jan Mayen"	3200	62422
+
+* Aggregate Functions: GROUP BY
+
+* Which region has the highest average gnp? (HINT: North America)
+
+SELECT region, AVG(gnp)
+FROM country
+GROUP BY region
+ORDER BY AVG(gnp) DESC
+
+"North America"	1822378.000000000000
+
+* Who is the most influential head of state measured by surface area? (HINT: Elisabeth II)
+
+SELECT headofstate, SUM(surfacearea)
+FROM country
+GROUP BY headofstate
+ORDER BY SUM(surfacearea) DESC
+
+"Elisabeth II"	1.8785748e+07
+
+* What is the average life expectancy for all continents?
+
+SELECT continent, AVG(lifeexpectancy)
+FROM country
+GROUP BY continent
+
+"Asia"	67.44117676978017
+"South America"	70.94615320058969
+"North America"	72.99189170631203
+"Oceania"	69.71500053405762
+"Antarctica"	
+"Africa"	52.57192966394257
+"Europe"	75.14772761951794
+
+* What are the most common forms of government? (HINT: use count(*))
+
+SELECT governmentform, COUNT(*)
+FROM country
+GROUP BY governmentform
+ORDER BY COUNT(*) DESC
+
+"Republic"	122
+"Constitutional Monarchy"	29
+"Federal Republic"	15
+
+* How many countries are in North America?
+
+SELECT continent, COUNT(*)
+FROM country
+WHERE continent = 'North America'
+GROUP BY continent
+
+"North America"	37
+
+* What is the total population of all continents?
+
+SELECT continent, SUM(population)
+FROM country
+GROUP BY continent
+
+"Asia"	3705025700
+"South America"	345780000
+"North America"	482993000
+"Oceania"	30401150
+"Antarctica"	0
+"Africa"	784475000
+"Europe"	730074600
+
+* Stretch Challenges
+
+* Which countries have the letter ‘z’ in the name? How many?
+
+SELECT name
+FROM country
+WHERE name LIKE '%z%'
+
+"Azerbaijan"
+"Belize"
+"Bosnia and Herzegovina"
+
+* Of the smallest 10 countries by area, which has the biggest gnp? (HINT: Macao)
+* Of the smallest 10 countries by population, which has the biggest per capita gnp?
+* Of the biggest 10 countries by area, which has the biggest gnp?
+* Of the biggest 10 countries by population, which has the biggest per capita gnp?
+* What is the sum of surface area of the 10 biggest countries in the world? The 10 smallest?
+* What year is this country database from? Cross reference various pieces of information to determine the age of this database.
+
