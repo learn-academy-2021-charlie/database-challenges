@@ -44,10 +44,27 @@ Add yourself to the Person table.
 Person.create first_name: "Heather", last_name: "Roulston", phone: "237-423-3434" -->
 
 Retrieve all the entries that have the same last_name as you.
+
+Person.where last_name: "Luna"
+
 Update the phone number of the last entry in the database.
+
+number=Person.find 7
+number.update phone: "562-875-9870"
+
 Retrieve the first_name of the third Person in the database.
+
+name=Person.find 3
+ name.first_name
 
 Stretch Challenges
 
 Update all the family members with the same last_name as you, to have the same phone number as you.
+
+number=Person.where last_name: "Luna"
+number.update phone: "123-456-7890"
+
 Remove all family members that do not have your last_name.
+
+name=Person.where.not(last_name: "Luna")
+name.delete_all
