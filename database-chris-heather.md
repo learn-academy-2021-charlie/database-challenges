@@ -204,6 +204,9 @@ FROM country;
 
 Stretch Challenges
 Which countries have the letter ‘z’ in the name? How many?
+
+
+
 Of the smallest 10 countries by area, which has the biggest gnp? (HINT: Macao)
 Of the smallest 10 countries by population, which has the biggest per capita gnp?
 Of the biggest 10 countries by area, which has the biggest gnp?
