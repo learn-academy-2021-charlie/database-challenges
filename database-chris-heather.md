@@ -95,14 +95,74 @@ limit 1
 
 
 Which is the smallest country by population? (HINT: 50)?
+
+SELECT name, population
+FROM country
+WHERE population > 0
+ORDER BY population 
+limit 1;
+
+
 Which is the biggest country by area? (HINT: 1.70754e+07)
+
+SELECT name, surfacearea
+FROM country
+ORDER BY surfacearea DESC
+limit 1;
+
+
 Which is the biggest country by population? (HINT: 1277558000)
+
+SELECT name, population
+FROM country
+WHERE population > 0
+ORDER BY population DESC
+limit 1;
+
+
 Who is the most influential head of state measured by population? (HINT: Jiang Zemin)
+
+SELECT name, population, headofstate
+FROM country
+ORDER BY population DESC
+limit 1;
+
+
 Subqueries: WITH
 Of the countries with the top 10 gnp, which has the smallest population? (HINT: Canada)
+
+WITH populated_countries AS (
+	SELECT name, population, gnp
+	FROM country
+	WHERE gnp > 0
+	AND population > 0
+	ORDER BY gnp DESC
+	limit 10
+)
+SELECT *
+FROM populated_countries
+ORDER BY population;
+
+
 Of the 10 least populated countries with permament residents (a non-zero population), which has the largest surfacearea? (HINT: Svalbard and Jan Mayen)
+
+WITH populated_countries AS (
+	SELECT name, population, surfacearea
+	FROM country
+	WHERE population > 0
+	ORDER BY population
+	limit 10
+)
+SELECT *
+FROM populated_countries
+ORDER BY surfacearea DESC
+
+
 Aggregate Functions: GROUP BY
 Which region has the highest average gnp? (HINT: North America)
+
+
+
 Who is the most influential head of state measured by surface area? (HINT: Elisabeth II)
 What is the average life expectancy for all continents?
 What are the most common forms of government? (HINT: use count(*))
