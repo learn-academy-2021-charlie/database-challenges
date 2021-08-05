@@ -7,7 +7,7 @@
 $ rails new favorite_movies -d postgresql -T
 # Output: webpacker successfully installed
 $ cd favorite_movies
-# Open the favorite_movies folder
+# Check the created favorite_movies folder
 $ rails db:create
 # Output
 # Created database 'favorite_movies_development'
