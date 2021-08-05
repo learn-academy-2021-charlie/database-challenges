@@ -58,7 +58,7 @@ Check the schema-a new column added to the schema:
 3.0.0 :004 > update.save
 # Caution here!!! SAVE the updates!!!
 # After update all movies with movie_length, run: Moive.all check the updated information.
-# Update other four existing rows 
+# Update other four existing rows same way
 ```
 - Generate a migration to rename the column 'category' to 'genre'
 ```ruby
