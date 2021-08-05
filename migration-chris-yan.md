@@ -33,7 +33,7 @@ $ rails c
 3.0.0 :005 > Movie.create title:"F9",category:"PG-13USA"
 ```
 - Create a migration to add a new column to the database called movie_length
-
+![1](./img/1.png)
 - Update the values of the five existing attributes to include a movie_length value
 ```ruby
 3.0.0 :002 > update = Movie.find 1
