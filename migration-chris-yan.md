@@ -33,9 +33,20 @@ $ rails c
 3.0.0 :005 > Movie.create title:"F9",category:"PG-13USA"
 ```
 - Create a migration to add a new column to the database called movie_length
+```ruby
+yanxu@Yans-MacBook-Air favorite_movies % rails generate migration add_column_movie_length_to_list
+# Syntax rails generate migration action_name
+# Output:
+# Running via Spring preloader in process 93986
+#   invoke active_record
+#  create  db/migrate/20210805172813_add_column_movie_length_to_list.rb
+```
+In the db/migrate/..._add_column_movie_length_to_list.rb insert the method context as img:
 ![1](./img/1.png)
-![1](./img/2.png)
+Terminal run the command as img:
 ![1](./img/3.png)
+Check the schema-a new column added to the schema:
+![1](./img/2.png)
 - Update the values of the five existing attributes to include a movie_length value
 ```ruby
 3.0.0 :002 > update = Movie.find 1
