@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 
 ^C- Gracefully stopping, waiting for requests to finish
 === puma shutdown: 2021-08-04 14:57:15 -0700 ===
@@ -33,8 +33,6 @@ Processing by Rails::WelcomeController#index as HTML
   Rendering /Users/learnacademy/.rvm/gems/ruby-3.0.0/gems/railties-6.1.4/lib/rails/templates/rails/welcome/index.html.erb
   Rendered /Users/learnacademy/.rvm/gems/ruby-3.0.0/gems/railties-6.1.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 11.5ms | Allocations: 415)
 Completed 200 OK in 38ms (Views: 16.8ms | ActiveRecord: 0.0ms | Allocations: 3068)
-=======
->>>>>>> 896d6867f4dcac7b0dee8d516ecd6e7ea44534cc
 
 
 rails generate model Person first_name:string last_name:string phone:string
