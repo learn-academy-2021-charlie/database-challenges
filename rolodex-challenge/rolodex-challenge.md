@@ -1,5 +1,40 @@
 
 
+^C- Gracefully stopping, waiting for requests to finish
+=== puma shutdown: 2021-08-04 14:57:15 -0700 ===
+- Goodbye!
+Exiting
+learnacademy@LEARNs-MacBook-Air rolodex_challenge % rails db:migrate
+learnacademy@LEARNs-MacBook-Air rolodex_challenge % code .
+learnacademy@LEARNs-MacBook-Air rolodex_challenge % rails sever
+rails aborted!
+Don't know how to build task 'sever' (See the list of available tasks with `rails --tasks`)
+/Users/learnacademy/Desktop/rolodex_challenge/bin/rails:5:in `<top (required)>'
+/Users/learnacademy/Desktop/rolodex_challenge/bin/spring:10:in `block in <top (required)>'
+/Users/learnacademy/Desktop/rolodex_challenge/bin/spring:7:in `<top (required)>'
+(See full trace by running task with --trace)
+learnacademy@LEARNs-MacBook-Air rolodex_challenge % rails server
+=> Booting Puma
+=> Rails 6.1.4 application starting in development
+=> Run `bin/rails server --help` for more startup options
+Puma starting in single mode...
+* Puma version: 5.4.0 (ruby 3.0.0-p0) ("Super Flight")
+*  Min threads: 5
+*  Max threads: 5
+*  Environment: development
+*          PID: 17870
+* Listening on http://127.0.0.1:3000
+* Listening on http://[::1]:3000
+Use Ctrl-C to stop
+rails db:mirgrate
+Started GET "/" for ::1 at 2021-08-04 15:03:26 -0700
+   (2.0ms)  SELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/learnacademy/.rvm/gems/ruby-3.0.0/gems/railties-6.1.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/learnacademy/.rvm/gems/ruby-3.0.0/gems/railties-6.1.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 11.5ms | Allocations: 415)
+Completed 200 OK in 38ms (Views: 16.8ms | ActiveRecord: 0.0ms | Allocations: 3068)
+
+
 rails generate model Person first_name:string last_name:string phone:string
 ^C- Gracefully stopping, waiting for requests to finish
 === puma shutdown: 2021-08-04 15:08:10 -0700 ===
