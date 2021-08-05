@@ -19,7 +19,7 @@ $ rails server
 # Open browser and localhost will see the ruby on rail page
 $ rails generate model Movie title:string category:string
 $ rails db:migrate
-# Check the folder：favorite_movies>app>models>movie.rb
+# Check the created file：favorite_movies>app>models>movie.rb
 $ rails c
 # Open up Rails console.
 ```
