@@ -22,3 +22,17 @@ This also generates a migration to create a table in our database
 ### run migration (make changes to database)
 
 rails db:migrate
+
+### Adding to the database 
+
+Movie.create title:"<titleOfMovie>", category:"<categoryOfMovie"
+Movie.create title:"The Matrix", category:"Action"
+
+## Creating a migration
+rails generate migration "<migration>
+
+### Create a new collumn called length 
+add_column "<:tableName>", "<:collumnName>", "<:dataType>"
+
+add_column :movies, :length, :integer
+
