@@ -25,7 +25,13 @@ Thirdperson = Person.find 3
  Thirdperson.first_name
  Todd
  Family
+
+
  Chris = Person.where first_name: "Chris"
   Family.phone = Chris.phone
   Family.phone
   Family
+
+  samename = Person.where last_name: 'Mackey'
+  samename.update phone: '444-444-4444'
+  Person.where("last_name != 'Mackey'").destroy_all
