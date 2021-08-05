@@ -29,6 +29,8 @@ $ rails c
 
 * Generate a migration to rename the column 'category' to 'genre'
 
+$ rails g migration RenameColumn
+
 In new migration class file add inside of the def change method:
 	rename_column :movies, :category, :genre
 
