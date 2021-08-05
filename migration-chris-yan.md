@@ -68,8 +68,9 @@ yanxu@Yans-MacBook-Air favorite_movies % rails generate migration rename_column_
 #       create    db/migrate/20210805180117_rename_column_category_to_genre.rb
 # yanxu@Yans-MacBook-Air favorite_movies % 
 ```
-![1](./img/4.png)
-![1](./img/5.png)
+In the db/migrate/..._rename_column_category_to_genre.rb insert the method context as img:
 ![1](./img/6.png)
+Terminal run the command as img:
 ![1](./img/7.png)
+Check the schema-category is changed to genre 
 ![1](./img/8.png)
