@@ -180,7 +180,7 @@ RSpec.describe Address, type: :model do
 end
 ```
 
-### run the spec.rb
+### Run the spec.rb
 ```ruby
 yanxu@Yans-MacBook-Air company_contacts % rspec spec/models/address_spec.rb
 # Output:
