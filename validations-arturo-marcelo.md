@@ -122,3 +122,48 @@ it "it not valid with duplicate password" do
 ```
 validates :password, presence: true, length: {minimum: 6}, uniqueness: true
 ```
+
+# As a developer, I want my Account model to have many associated Addresses.
+```
+class Account < ApplicationRecord
+  has_many :addresses
+  validates :username, presence: true, length: {minimum: 5}, uniqueness: true
+  validates :password, presence: true, length: {minimum: 6}, uniqueness: true
+  validates :email, presence: true
+end
+```
+```
+class Address < ApplicationRecord
+  belongs_to :account
+end
+```
+# As a developer, I want Address to have street_number, street_name, city, state, and zip attributes. The street_number and zip should be integers.
+```
+create_table "addresses", force: :cascade do |t|
+  t.integer "street_number"
+  t.string "street_name"
+  t.string "city"
+  t.string "state"
+  t.integer "zip"
+  t.integer "account_id"
+  t.datetime "created_at", precision: 6, null: false
+  t.datetime "updated_at", precision: 6, null: false
+end
+```
+# As a developer, I want to validate the presence of all fields on Address.
+require 'rails_helper'
+```
+RSpec.describe Address, type: :model do
+  it "it not valid without an street name" do
+    mike = Account.create username:'Mike Smith', password:'123password', email:'mike@gmail.com'
+    mikes_address = Address.create street_number: 342, city: 'adkak', state: 'DE', zip: 12321, account_id: 1
+    expect(mikes_address.errors[:street_name]).to_not be_empty
+  end
+end
+```
+```
+class Address < ApplicationRecord
+  belongs_to :account
+  validates :street_name, presence: true
+end
+```
