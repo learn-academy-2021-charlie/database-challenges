@@ -58,8 +58,10 @@ Owner.create(name:"Freddy" ,address:"1021 Elm Street")
 
 **Create a credit card in the database for each owner**
 
-j = Owner.where(name: "John")
-Owner.credit_cards.create(number: 55555,expiration:'12/10/2020')
+j = Owner.where(name: "John").first
+j.credit_cards.create(number: 55555,expiration:'12/10/2020')
+
+
 
 **Add two more credit cards to one of the owners**
 
