@@ -1,0 +1,2 @@
+module LauralynHelper
+end

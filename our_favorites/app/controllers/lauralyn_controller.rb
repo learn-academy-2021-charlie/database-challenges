@@ -1,0 +1,2 @@
+class LauralynController < ApplicationController
+end

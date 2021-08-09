@@ -1,0 +1,623 @@
+  [1m[35m (643.3ms)[0m  [1m[35mCREATE DATABASE "our_favorites_development" ENCODING = 'unicode'[0m
+  [1m[35m (249.1ms)[0m  [1m[35mCREATE DATABASE "our_favorites_test" ENCODING = 'unicode'[0m
+Started GET "/" for ::1 at 2021-08-09 14:34:35 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/learnacademy/.rvm/gems/ruby-3.0.0/gems/railties-6.1.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/learnacademy/.rvm/gems/ruby-3.0.0/gems/railties-6.1.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 18.5ms | Allocations: 522)
+Completed 200 OK in 56ms (Views: 31.2ms | ActiveRecord: 0.0ms | Allocations: 4215)
+
+
+Started GET "/" for ::1 at 2021-08-09 14:41:40 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/learnacademy/.rvm/gems/ruby-3.0.0/gems/railties-6.1.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/learnacademy/.rvm/gems/ruby-3.0.0/gems/railties-6.1.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 17.0ms | Allocations: 415)
+Completed 200 OK in 39ms (Views: 23.6ms | ActiveRecord: 0.0ms | Allocations: 3126)
+
+
+Started GET "/" for ::1 at 2021-08-09 14:45:17 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/learnacademy/.rvm/gems/ruby-3.0.0/gems/railties-6.1.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/learnacademy/.rvm/gems/ruby-3.0.0/gems/railties-6.1.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 17.0ms | Allocations: 222)
+Completed 200 OK in 22ms (Views: 19.3ms | ActiveRecord: 0.0ms | Allocations: 958)
+
+
+Started GET "/" for ::1 at 2021-08-09 14:45:42 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/learnacademy/.rvm/gems/ruby-3.0.0/gems/railties-6.1.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/learnacademy/.rvm/gems/ruby-3.0.0/gems/railties-6.1.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 8.1ms | Allocations: 219)
+Completed 200 OK in 11ms (Views: 9.5ms | ActiveRecord: 0.0ms | Allocations: 955)
+
+
+Started GET "/" for ::1 at 2021-08-09 14:45:46 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/learnacademy/.rvm/gems/ruby-3.0.0/gems/railties-6.1.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/learnacademy/.rvm/gems/ruby-3.0.0/gems/railties-6.1.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.5ms | Allocations: 46)
+Completed 200 OK in 5ms (Views: 3.0ms | ActiveRecord: 0.0ms | Allocations: 414)
+
+
+Started GET "/main" for ::1 at 2021-08-09 14:45:59 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/main"):
+  
+Started GET "/home" for ::1 at 2021-08-09 14:46:10 -0700
+Processing by MainController#home as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/home.html.erb (called from home at /Users/learnacademy/Desktop/database-challenges/our_favorites/app/controllers/main_controller.rb:3)
+  Rendering layout layouts/application.html.erb
+  Rendering main/home.html.erb within layouts/application
+  Rendered main/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 106)
+[Webpacker] Compiling...
+Started GET "/home" for ::1 at 2021-08-09 14:46:13 -0700
+Processing by MainController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/home.html.erb within layouts/application
+  Rendered main/home.html.erb within layouts/application (Duration: 0.2ms | Allocations: 38)
+[Webpacker] Compiling...
+Started GET "/main" for ::1 at 2021-08-09 14:46:23 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/main"):
+  
+[Webpacker] Compiled all packs in /Users/learnacademy/Desktop/database-challenges/our_favorites/public/packs
+[Webpacker] Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-property-in-object.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-property-in-object.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-property-in-object.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-property-in-object.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-property-in-object.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-property-in-object.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+[Webpacker] Hash: e2a8a876c5815bee1e21
+Version: webpack 4.46.0
+Time: 8767ms
+Built at: 08/09/2021 2:46:25 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 14323.5ms | Allocations: 66946)
+Completed 200 OK in 14332ms (Views: 14330.3ms | ActiveRecord: 0.0ms | Allocations: 68339)
+
+
+[Webpacker] Compiled all packs in /Users/learnacademy/Desktop/database-challenges/our_favorites/public/packs
+[Webpacker] Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-property-in-object.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-property-in-object.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+[Webpacker] Hash: e2a8a876c5815bee1e21
+Version: webpack 4.46.0
+Time: 6075ms
+Built at: 08/09/2021 2:46:25 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 12535.8ms | Allocations: 43995)
+Completed 200 OK in 12539ms (Views: 12537.3ms | ActiveRecord: 0.0ms | Allocations: 44361)
+
+
+Started GET "/home" for ::1 at 2021-08-09 14:46:28 -0700
+Processing by MainController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/home.html.erb within layouts/application
+  Rendered main/home.html.erb within layouts/application (Duration: 0.2ms | Allocations: 38)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.2ms | Allocations: 3600)
+Completed 200 OK in 11ms (Views: 10.4ms | ActiveRecord: 0.0ms | Allocations: 3968)
+
+
+Started GET "/" for ::1 at 2021-08-09 14:46:36 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/learnacademy/.rvm/gems/ruby-3.0.0/gems/railties-6.1.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/learnacademy/.rvm/gems/ruby-3.0.0/gems/railties-6.1.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.7ms | Allocations: 45)
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.0ms | Allocations: 487)
+
+
+Started GET "/" for ::1 at 2021-08-09 14:46:51 -0700
+Processing by MainController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/home.html.erb within layouts/application
+  Rendered main/home.html.erb within layouts/application (Duration: 1.7ms | Allocations: 40)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.4ms | Allocations: 3645)
+Completed 200 OK in 21ms (Views: 19.7ms | ActiveRecord: 0.0ms | Allocations: 4253)
+
+
+Started GET "/" for ::1 at 2021-08-09 14:48:11 -0700
+Processing by MainController#home as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/home.html.erb (called from home at /Users/learnacademy/Desktop/database-challenges/our_favorites/app/controllers/main_controller.rb:3)
+  Rendering layout layouts/application.html.erb
+  Rendering main/home.html.erb within layouts/application
+  Rendered main/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 115)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.7ms | Allocations: 3901)
+Completed 200 OK in 20ms (Views: 18.8ms | ActiveRecord: 0.0ms | Allocations: 5244)
+
+
+Started GET "/" for ::1 at 2021-08-09 14:48:27 -0700
+Processing by MainController#home as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/home.html.erb (called from home at /Users/learnacademy/Desktop/database-challenges/our_favorites/app/controllers/main_controller.rb:3)
+  Rendering layout layouts/application.html.erb
+  Rendering main/home.html.erb within layouts/application
+  Rendered main/home.html.erb within layouts/application (Duration: 1.0ms | Allocations: 110)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 19.7ms | Allocations: 3902)
+Completed 200 OK in 30ms (Views: 28.1ms | ActiveRecord: 0.0ms | Allocations: 5251)
+
+
+Started GET "/" for ::1 at 2021-08-09 14:48:28 -0700
+Processing by MainController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/home.html.erb within layouts/application
+  Rendered main/home.html.erb within layouts/application (Duration: 0.2ms | Allocations: 38)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.4ms | Allocations: 3587)
+Completed 200 OK in 17ms (Views: 15.7ms | ActiveRecord: 0.0ms | Allocations: 4006)
+
+
+Started GET "/" for ::1 at 2021-08-09 14:50:01 -0700
+Processing by MainController#home as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/home.html.erb (called from home at /Users/learnacademy/Desktop/database-challenges/our_favorites/app/controllers/main_controller.rb:3)
+  Rendering layout layouts/application.html.erb
+  Rendering main/home.html.erb within layouts/application
+  Rendered main/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 110)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.1ms | Allocations: 3901)
+Completed 200 OK in 16ms (Views: 14.6ms | ActiveRecord: 0.0ms | Allocations: 5236)
+
+
+Started GET "/amanda" for ::1 at 2021-08-09 14:57:07 -0700
+Processing by AmandaController#amanda_foods as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: amanda/amanda.html.erb (called from amanda_foods at /Users/learnacademy/Desktop/database-challenges/our_favorites/app/controllers/amanda_controller.rb:3)
+  Rendering layout layouts/application.html.erb
+  Rendering amanda/amanda.html.erb within layouts/application
+  Rendered amanda/amanda.html.erb within layouts/application (Duration: 0.3ms | Allocations: 112)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 3877)
+Completed 200 OK in 13ms (Views: 12.8ms | Allocations: 5241)
+
+
+Started GET "/amanda" for ::1 at 2021-08-09 14:57:41 -0700
+Processing by AmandaController#amanda_foods as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: amanda/amanda.html.erb (called from amanda_foods at /Users/learnacademy/Desktop/database-challenges/our_favorites/app/controllers/amanda_controller.rb:3)
+  Rendering layout layouts/application.html.erb
+  Rendering amanda/amanda.html.erb within layouts/application
+  Rendered amanda/amanda.html.erb within layouts/application (Duration: 3.1ms | Allocations: 111)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 20.2ms | Allocations: 3897)
+Completed 200 OK in 28ms (Views: 26.8ms | Allocations: 5229)
+
+
+Started GET "/amanda" for ::1 at 2021-08-09 15:00:52 -0700
+Processing by AmandaController#amanda_foods as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: amanda/amanda.html.erb (called from amanda_foods at /Users/learnacademy/Desktop/database-challenges/our_favorites/app/controllers/amanda_controller.rb:3)
+  Rendering layout layouts/application.html.erb
+  Rendering amanda/amanda.html.erb within layouts/application
+  Rendered amanda/amanda.html.erb within layouts/application (Duration: 0.5ms | Allocations: 144)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.2ms | Allocations: 3928)
+Completed 200 OK in 18ms (Views: 17.1ms | Allocations: 5262)
+
+
+Started GET "/" for ::1 at 2021-08-09 15:00:54 -0700
+Processing by MainController#home as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/home.html.erb (called from home at /Users/learnacademy/Desktop/database-challenges/our_favorites/app/controllers/main_controller.rb:3)
+  Rendering layout layouts/application.html.erb
+  Rendering main/home.html.erb within layouts/application
+  Rendered main/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 111)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 3698)
+Completed 200 OK in 12ms (Views: 11.1ms | Allocations: 4841)
+
+
+Started GET "/" for ::1 at 2021-08-09 15:01:10 -0700
+Processing by MainController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/home.html.erb within layouts/application
+  Rendered main/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 38)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.1ms | Allocations: 3733)
+Completed 200 OK in 13ms (Views: 12.1ms | Allocations: 4162)
+
+
+Started GET "/" for ::1 at 2021-08-09 15:01:18 -0700
+Processing by MainController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/home.html.erb within layouts/application
+  Rendered main/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 38)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.2ms | Allocations: 3587)
+Completed 200 OK in 12ms (Views: 11.0ms | Allocations: 4002)
+
+
+Started GET "/amanda" for ::1 at 2021-08-09 15:01:22 -0700
+Processing by AmandaController#amanda_foods as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering amanda/amanda.html.erb within layouts/application
+  Rendered amanda/amanda.html.erb within layouts/application (Duration: 0.2ms | Allocations: 48)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.4ms | Allocations: 3707)
+Completed 200 OK in 17ms (Views: 14.7ms | Allocations: 4133)
+
+
+Started GET "/amanda" for ::1 at 2021-08-09 15:02:37 -0700
+Processing by AmandaController#amanda_foods as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering amanda/amanda.html.erb within layouts/application
+  Rendered amanda/amanda.html.erb within layouts/application (Duration: 0.1ms | Allocations: 58)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 3655)
+Completed 200 OK in 9ms (Views: 8.4ms | Allocations: 4259)
+
+
+Started GET "/amanda" for ::1 at 2021-08-09 15:04:14 -0700
+Started GET "/" for ::1 at 2021-08-09 15:04:47 -0700
+Processing by MainController#home as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/home.html.erb (called from home at /Users/learnacademy/Desktop/database-challenges/our_favorites/app/controllers/main_controller.rb:3)
+  Rendering layout layouts/application.html.erb
+  Rendering main/home.html.erb within layouts/application
+  Rendered main/home.html.erb within layouts/application (Duration: 2.3ms | Allocations: 853)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 25.3ms | Allocations: 7861)
+Completed 200 OK in 41ms (Views: 32.6ms | ActiveRecord: 0.0ms | Allocations: 11232)
+
+
+Started GET "/" for ::1 at 2021-08-09 15:05:11 -0700
+Processing by MainController#home as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/home.html.erb (called from home at /Users/learnacademy/Desktop/database-challenges/our_favorites/app/controllers/main_controller.rb:3)
+  Rendering layout layouts/application.html.erb
+  Rendering main/home.html.erb within layouts/application
+  Rendered main/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 155)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 3954)
+Completed 200 OK in 11ms (Views: 10.8ms | ActiveRecord: 0.0ms | Allocations: 5300)
+
+
+Started GET "/" for ::1 at 2021-08-09 15:05:46 -0700
+Processing by MainController#home as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/home.html.erb (called from home at /Users/learnacademy/Desktop/database-challenges/our_favorites/app/controllers/main_controller.rb:3)
+  Rendering layout layouts/application.html.erb
+  Rendering main/home.html.erb within layouts/application
+  Rendered main/home.html.erb within layouts/application (Duration: 0.8ms | Allocations: 154)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.6ms | Allocations: 3939)
+Completed 200 OK in 21ms (Views: 19.4ms | ActiveRecord: 0.0ms | Allocations: 5284)
+
+
+Started GET "/" for ::1 at 2021-08-09 15:05:47 -0700
+Processing by MainController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/home.html.erb within layouts/application
+  Rendered main/home.html.erb within layouts/application (Duration: 0.2ms | Allocations: 49)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.6ms | Allocations: 3613)
+Completed 200 OK in 16ms (Views: 14.9ms | ActiveRecord: 0.0ms | Allocations: 4033)
+
+
+Started GET "/amanda" for ::1 at 2021-08-09 15:05:49 -0700
+Processing by AmandaController#amanda_foods as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: amanda/amanda.html.erb (called from amanda_foods at /Users/learnacademy/Desktop/database-challenges/our_favorites/app/controllers/amanda_controller.rb:3)
+  Rendering layout layouts/application.html.erb
+  Rendering amanda/amanda.html.erb within layouts/application
+  Rendered amanda/amanda.html.erb within layouts/application (Duration: 0.6ms | Allocations: 146)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.3ms | Allocations: 3722)
+Completed 200 OK in 14ms (Views: 13.4ms | ActiveRecord: 0.0ms | Allocations: 4877)
+
+
+Started GET "/" for ::1 at 2021-08-09 15:07:42 -0700
+Processing by MainController#home as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/home.html.erb (called from home at /Users/learnacademy/Desktop/database-challenges/our_favorites/app/controllers/main_controller.rb:3)
+  Rendering layout layouts/application.html.erb
+  Rendering main/home.html.erb within layouts/application
+  Rendered main/home.html.erb within layouts/application (Duration: 0.8ms | Allocations: 158)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 3920)
+Completed 200 OK in 12ms (Views: 11.6ms | ActiveRecord: 0.0ms | Allocations: 5288)
+
+
+Started GET "/amanda" for ::1 at 2021-08-09 15:07:43 -0700
+Processing by AmandaController#amanda_foods as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: amanda/amanda.html.erb (called from amanda_foods at /Users/learnacademy/Desktop/database-challenges/our_favorites/app/controllers/amanda_controller.rb:3)
+  Rendering layout layouts/application.html.erb
+  Rendering amanda/amanda.html.erb within layouts/application
+  Rendered amanda/amanda.html.erb within layouts/application (Duration: 1.0ms | Allocations: 235)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.2ms | Allocations: 3927)
+Completed 200 OK in 17ms (Views: 15.8ms | ActiveRecord: 0.0ms | Allocations: 5096)
+
+
+Started GET "/amanda" for ::1 at 2021-08-09 15:09:37 -0700
+Processing by AmandaController#amanda_foods as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: amanda/amanda.html.erb (called from amanda_foods at /Users/learnacademy/Desktop/database-challenges/our_favorites/app/controllers/amanda_controller.rb:3)
+  Rendering layout layouts/application.html.erb
+  Rendering amanda/amanda.html.erb within layouts/application
+  Rendered amanda/amanda.html.erb within layouts/application (Duration: 0.7ms | Allocations: 240)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 4023)
+Completed 200 OK in 13ms (Views: 12.6ms | ActiveRecord: 0.0ms | Allocations: 5358)
+
+
+Started GET "/amanda" for ::1 at 2021-08-09 15:10:04 -0700
+Processing by AmandaController#amanda_foods as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: amanda/amanda.html.erb (called from amanda_foods at /Users/learnacademy/Desktop/database-challenges/our_favorites/app/controllers/amanda_controller.rb:3)
+  Rendering layout layouts/application.html.erb
+  Rendering amanda/amanda.html.erb within layouts/application
+  Rendered amanda/amanda.html.erb within layouts/application (Duration: 0.9ms | Allocations: 233)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.3ms | Allocations: 4018)
+Completed 200 OK in 14ms (Views: 13.1ms | ActiveRecord: 0.0ms | Allocations: 5361)
+
+
+Started GET "/amanda" for ::1 at 2021-08-09 15:15:51 -0700
+Processing by AmandaController#amanda_foods as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: amanda/amanda.html.erb (called from amanda_foods at /Users/learnacademy/Desktop/database-challenges/our_favorites/app/controllers/amanda_controller.rb:3)
+  Rendering layout layouts/application.html.erb
+  Rendering amanda/amanda.html.erb within layouts/application
+  Rendered amanda/amanda.html.erb within layouts/application (Duration: 0.9ms | Allocations: 231)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.1ms | Allocations: 4014)
+Completed 200 OK in 23ms (Views: 22.0ms | Allocations: 5347)
+
+
+Started GET "/" for ::1 at 2021-08-09 15:15:53 -0700
+Processing by MainController#home as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/home.html.erb (called from home at /Users/learnacademy/Desktop/database-challenges/our_favorites/app/controllers/main_controller.rb:3)
+  Rendering layout layouts/application.html.erb
+  Rendering main/home.html.erb within layouts/application
+  Rendered main/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 155)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.3ms | Allocations: 3770)
+Completed 200 OK in 16ms (Views: 15.3ms | Allocations: 4988)
+
+
+Started GET "/amanda" for ::1 at 2021-08-09 15:20:52 -0700
+Processing by AmandaController#amanda_foods as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: amanda/amanda.html.erb (called from amanda_foods at /Users/learnacademy/Desktop/database-challenges/our_favorites/app/controllers/amanda_controller.rb:3)
+  Rendering layout layouts/application.html.erb
+  Rendering amanda/amanda.html.erb within layouts/application
+  Rendered amanda/amanda.html.erb within layouts/application (Duration: 0.6ms | Allocations: 237)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.2ms | Allocations: 4015)
+Completed 200 OK in 15ms (Views: 14.4ms | Allocations: 5386)
+
+
+Started GET "/lasagna" for ::1 at 2021-08-09 15:20:53 -0700
+Processing by AmandaController#lasagna as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: amanda/lasagna.html.erb (called from lasagna at /Users/learnacademy/Desktop/database-challenges/our_favorites/app/controllers/amanda_controller.rb:6)
+  Rendering layout layouts/application.html.erb
+  Rendering amanda/lasagna.html.erb within layouts/application
+  Rendered amanda/lasagna.html.erb within layouts/application (Duration: 0.3ms | Allocations: 112)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.9ms | Allocations: 3754)
+Completed 200 OK in 14ms (Views: 13.0ms | Allocations: 4472)
+
+
+Started GET "/lasagna" for ::1 at 2021-08-09 15:21:27 -0700
+Processing by AmandaController#lasagna as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: amanda/lasagna.html.erb (called from lasagna at /Users/learnacademy/Desktop/database-challenges/our_favorites/app/controllers/amanda_controller.rb:6)
+  Rendering layout layouts/application.html.erb
+  Rendering amanda/lasagna.html.erb within layouts/application
+  Rendered amanda/lasagna.html.erb within layouts/application (Duration: 0.7ms | Allocations: 148)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.1ms | Allocations: 3931)
+Completed 200 OK in 19ms (Views: 18.2ms | Allocations: 5266)
+
+
+Started GET "/lasagna" for ::1 at 2021-08-09 15:23:10 -0700
+Processing by AmandaController#lasagna as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: amanda/lasagna.html.erb (called from lasagna at /Users/learnacademy/Desktop/database-challenges/our_favorites/app/controllers/amanda_controller.rb:6)
+  Rendering layout layouts/application.html.erb
+  Rendering amanda/lasagna.html.erb within layouts/application
+  Rendered amanda/lasagna.html.erb within layouts/application (Duration: 0.7ms | Allocations: 147)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | Allocations: 3930)
+Completed 200 OK in 12ms (Views: 11.7ms | Allocations: 5263)
+
+
+Started GET "/amanda" for ::1 at 2021-08-09 15:23:11 -0700
+Processing by AmandaController#amanda_foods as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: amanda/amanda.html.erb (called from amanda_foods at /Users/learnacademy/Desktop/database-challenges/our_favorites/app/controllers/amanda_controller.rb:3)
+  Rendering layout layouts/application.html.erb
+  Rendering amanda/amanda.html.erb within layouts/application
+  Rendered amanda/amanda.html.erb within layouts/application (Duration: 0.8ms | Allocations: 221)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.8ms | Allocations: 3769)
+Completed 200 OK in 12ms (Views: 11.7ms | Allocations: 4549)
+
+
+Started GET "/amanda" for ::1 at 2021-08-09 15:24:37 -0700
+Processing by AmandaController#amanda_foods as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: amanda/amanda.html.erb (called from amanda_foods at /Users/learnacademy/Desktop/database-challenges/our_favorites/app/controllers/amanda_controller.rb:3)
+  Rendering layout layouts/application.html.erb
+  Rendering amanda/amanda.html.erb within layouts/application
+  Rendered amanda/amanda.html.erb within layouts/application (Duration: 0.5ms | Allocations: 232)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.1ms | Allocations: 3994)
+Completed 200 OK in 14ms (Views: 12.8ms | Allocations: 5356)
+
+
+Started GET "/" for ::1 at 2021-08-09 15:24:39 -0700
+Processing by MainController#home as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/home.html.erb (called from home at /Users/learnacademy/Desktop/database-challenges/our_favorites/app/controllers/main_controller.rb:3)
+  Rendering layout layouts/application.html.erb
+  Rendering main/home.html.erb within layouts/application
+  Rendered main/home.html.erb within layouts/application (Duration: 1.0ms | Allocations: 155)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.1ms | Allocations: 3768)
+Completed 200 OK in 15ms (Views: 14.3ms | Allocations: 5002)
+
+
+Started GET "/amanda" for ::1 at 2021-08-09 15:24:40 -0700
+Processing by AmandaController#amanda_foods as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering amanda/amanda.html.erb within layouts/application
+  Rendered amanda/amanda.html.erb within layouts/application (Duration: 0.2ms | Allocations: 77)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.3ms | Allocations: 3728)
+Completed 200 OK in 13ms (Views: 12.3ms | Allocations: 4157)
+
+
+Started GET "/lasagna" for ::1 at 2021-08-09 15:25:12 -0700
+Processing by AmandaController#lasagna as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: amanda/lasagna.html.erb (called from lasagna at /Users/learnacademy/Desktop/database-challenges/our_favorites/app/controllers/amanda_controller.rb:6)
+  Rendering layout layouts/application.html.erb
+  Rendering amanda/lasagna.html.erb within layouts/application
+  Rendered amanda/lasagna.html.erb within layouts/application (Duration: 0.4ms | Allocations: 140)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.8ms | Allocations: 3816)
+Completed 200 OK in 12ms (Views: 11.5ms | Allocations: 4550)
+
+
+Started GET "/" for ::1 at 2021-08-09 15:25:14 -0700
+Processing by MainController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/home.html.erb within layouts/application
+  Rendered main/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 49)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16.0ms | Allocations: 4189)
+Completed 200 OK in 19ms (Views: 17.6ms | Allocations: 4607)
+
+
+Started GET "/amanda" for ::1 at 2021-08-09 15:25:14 -0700
+Processing by AmandaController#amanda_foods as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering amanda/amanda.html.erb within layouts/application
+  Rendered amanda/amanda.html.erb within layouts/application (Duration: 1.4ms | Allocations: 183)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.9ms | Allocations: 3731)
+Completed 200 OK in 16ms (Views: 15.1ms | Allocations: 4155)
+
+
+Started GET "/amanda" for ::1 at 2021-08-09 15:25:52 -0700
+Processing by AmandaController#amanda_foods as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: amanda/amanda.html.erb (called from amanda_foods at /Users/learnacademy/Desktop/database-challenges/our_favorites/app/controllers/amanda_controller.rb:3)
+  Rendering layout layouts/application.html.erb
+  Rendering amanda/amanda.html.erb within layouts/application
+  Rendered amanda/amanda.html.erb within layouts/application (Duration: 1.5ms | Allocations: 234)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.1ms | Allocations: 4012)
+Completed 200 OK in 23ms (Views: 22.1ms | Allocations: 5383)
+
+
+Started GET "/tacos" for ::1 at 2021-08-09 15:25:54 -0700
+Processing by AmandaController#tacos as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: amanda/tacos.html.erb (called from tacos at /Users/learnacademy/Desktop/database-challenges/our_favorites/app/controllers/amanda_controller.rb:9)
+  Rendering layout layouts/application.html.erb
+  Rendering amanda/tacos.html.erb within layouts/application
+  Rendered amanda/tacos.html.erb within layouts/application (Duration: 0.5ms | Allocations: 137)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.6ms | Allocations: 3781)
+Completed 200 OK in 15ms (Views: 13.9ms | Allocations: 4501)
+
+
+Started GET "/tacos" for ::1 at 2021-08-09 15:26:04 -0700
+Processing by AmandaController#tacos as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: amanda/tacos.html.erb (called from tacos at /Users/learnacademy/Desktop/database-challenges/our_favorites/app/controllers/amanda_controller.rb:9)
+  Rendering layout layouts/application.html.erb
+  Rendering amanda/tacos.html.erb within layouts/application
+  Rendered amanda/tacos.html.erb within layouts/application (Duration: 1.9ms | Allocations: 148)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 28.4ms | Allocations: 3931)
+Completed 200 OK in 42ms (Views: 41.4ms | Allocations: 5266)
+
+
+Started GET "/amanda" for ::1 at 2021-08-09 15:29:33 -0700
+Processing by AmandaController#amanda_foods as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: amanda/amanda.html.erb (called from amanda_foods at /Users/learnacademy/Desktop/database-challenges/our_favorites/app/controllers/amanda_controller.rb:3)
+  Rendering layout layouts/application.html.erb
+  Rendering amanda/amanda.html.erb within layouts/application
+  Rendered amanda/amanda.html.erb within layouts/application (Duration: 0.5ms | Allocations: 233)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 3995)
+Completed 200 OK in 11ms (Views: 10.9ms | Allocations: 5360)
+
+
+Started GET "/cheesefries" for ::1 at 2021-08-09 15:29:34 -0700
+Processing by AmandaController#cheesefries as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: amanda/cheesefries.html.erb (called from cheesefries at /Users/learnacademy/Desktop/database-challenges/our_favorites/app/controllers/amanda_controller.rb:12)
+  Rendering layout layouts/application.html.erb
+  Rendering amanda/cheesefries.html.erb within layouts/application
+  Rendered amanda/cheesefries.html.erb within layouts/application (Duration: 0.7ms | Allocations: 210)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 30.0ms | Allocations: 3774)
+Completed 200 OK in 33ms (Views: 32.5ms | Allocations: 4487)
+
+
+Started GET "/" for ::1 at 2021-08-09 15:31:40 -0700
+Processing by MainController#home as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/home.html.erb (called from home at /Users/learnacademy/Desktop/database-challenges/our_favorites/app/controllers/main_controller.rb:3)
+  Rendering layout layouts/application.html.erb
+  Rendering main/home.html.erb within layouts/application
+  Rendered main/home.html.erb within layouts/application (Duration: 0.7ms | Allocations: 161)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.8ms | Allocations: 3922)
+Completed 200 OK in 13ms (Views: 12.3ms | Allocations: 5290)
+
+
