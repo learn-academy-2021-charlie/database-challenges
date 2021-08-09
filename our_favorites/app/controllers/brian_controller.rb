@@ -1,0 +1,2 @@
+class BrianController < ApplicationController
+end

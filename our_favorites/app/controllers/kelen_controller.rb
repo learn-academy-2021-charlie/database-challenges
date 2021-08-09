@@ -1,0 +1,2 @@
+class KelenController < ApplicationController
+end
