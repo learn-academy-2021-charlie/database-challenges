@@ -1,0 +1,2 @@
+class MarceloController < ApplicationController
+end

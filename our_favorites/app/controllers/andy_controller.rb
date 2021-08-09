@@ -1,0 +1,2 @@
+class AndyController < ApplicationController
+end
