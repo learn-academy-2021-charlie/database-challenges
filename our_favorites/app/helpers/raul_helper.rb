@@ -1,0 +1,2 @@
+module RaulHelper
+end

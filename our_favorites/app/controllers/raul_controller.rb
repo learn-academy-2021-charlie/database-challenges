@@ -1,0 +1,2 @@
+class RaulController < ApplicationController
+end
