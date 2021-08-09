@@ -1,0 +1,2 @@
+class ConradController < ApplicationController
+end

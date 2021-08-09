@@ -1,0 +1,2 @@
+class ChrisController < ApplicationController
+end

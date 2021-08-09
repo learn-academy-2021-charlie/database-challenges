@@ -1,0 +1,1173 @@
+  [1m[35m (965.9ms)[0m  [1m[35mCREATE DATABASE "our_favorites_development" ENCODING = 'unicode'[0m
+  [1m[35m (413.1ms)[0m  [1m[35mCREATE DATABASE "our_favorites_test" ENCODING = 'unicode'[0m
+Started GET "/" for ::1 at 2021-08-09 14:28:59 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/learnacademy/.rvm/gems/ruby-3.0.0/gems/railties-6.1.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/learnacademy/.rvm/gems/ruby-3.0.0/gems/railties-6.1.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 20.2ms | Allocations: 522)
+Completed 200 OK in 65ms (Views: 34.2ms | ActiveRecord: 0.0ms | Allocations: 4215)
+
+
+Started GET "/" for ::1 at 2021-08-09 14:35:51 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/learnacademy/.rvm/gems/ruby-3.0.0/gems/railties-6.1.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/learnacademy/.rvm/gems/ruby-3.0.0/gems/railties-6.1.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 132.9ms | Allocations: 224)
+Completed 200 OK in 149ms (Views: 137.3ms | Allocations: 952)
+
+
+Started GET "/main" for ::1 at 2021-08-09 14:35:58 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/main"):
+  
+Started GET "/landing" for ::1 at 2021-08-09 14:37:15 -0700
+Processing by MainController#landing as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.2ms | Allocations: 32)
+Completed 500 Internal Server Error in 15ms (Views: 13.7ms | Allocations: 1122)
+
+
+  
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  
+app/controllers/main_controller.rb:4:in `landing'
+Started GET "/landing" for ::1 at 2021-08-09 14:37:44 -0700
+Processing by MainController#landing as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.2ms | Allocations: 28)
+Completed 200 OK in 3ms (Views: 1.5ms | Allocations: 511)
+
+
+Started GET "/landing" for ::1 at 2021-08-09 14:42:08 -0700
+Processing by MainController#landing as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/landing.html.erb (called from landing at /Users/learnacademy/Desktop/Learn Stuff/database-challenges/our_favorites/app/controllers/main_controller.rb:3)
+  Rendering layout layouts/application.html.erb
+  Rendering main/landing.html.erb within layouts/application
+  Rendered main/landing.html.erb within layouts/application (Duration: 1.4ms | Allocations: 114)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/learnacademy/Desktop/Learn Stuff/database-challenges/our_favorites/public/packs
+[Webpacker] Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-property-in-object.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-property-in-object.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-property-in-object.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-property-in-object.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-property-in-object.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-property-in-object.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+[Webpacker] Hash: e2a8a876c5815bee1e21
+Version: webpack 4.46.0
+Time: 4847ms
+Built at: 08/09/2021 2:42:22 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 13758.4ms | Allocations: 22136)
+Completed 200 OK in 13780ms (Views: 13778.9ms | Allocations: 23508)
+
+
+Started GET "/landing" for ::1 at 2021-08-09 14:43:05 -0700
+Processing by MainController#landing as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/landing.html.erb (called from landing at /Users/learnacademy/Desktop/Learn Stuff/database-challenges/our_favorites/app/controllers/main_controller.rb:3)
+  Rendering layout layouts/application.html.erb
+  Rendering main/landing.html.erb within layouts/application
+  Rendered main/landing.html.erb within layouts/application (Duration: 2.6ms | Allocations: 116)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 41.1ms | Allocations: 4053)
+Completed 200 OK in 80ms (Views: 78.6ms | Allocations: 5419)
+
+
+Started GET "/landing" for ::1 at 2021-08-09 14:43:07 -0700
+Processing by MainController#landing as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/landing.html.erb within layouts/application
+  Rendered main/landing.html.erb within layouts/application (Duration: 0.2ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 19.7ms | Allocations: 3734)
+Completed 200 OK in 22ms (Views: 21.1ms | Allocations: 4150)
+
+
+Started GET "/landing" for ::1 at 2021-08-09 14:43:16 -0700
+Processing by MainController#landing as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/landing.html.erb (called from landing at /Users/learnacademy/Desktop/Learn Stuff/database-challenges/our_favorites/app/controllers/main_controller.rb:3)
+  Rendering layout layouts/application.html.erb
+  Rendering main/landing.html.erb within layouts/application
+  Rendered main/landing.html.erb within layouts/application (Duration: 1.3ms | Allocations: 108)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 23.3ms | Allocations: 4039)
+Completed 200 OK in 35ms (Views: 33.7ms | Allocations: 5379)
+
+
+Started GET "/landing" for ::1 at 2021-08-09 14:43:30 -0700
+Processing by MainController#landing as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/landing.html.erb (called from landing at /Users/learnacademy/Desktop/Learn Stuff/database-challenges/our_favorites/app/controllers/main_controller.rb:3)
+  Rendering layout layouts/application.html.erb
+  Rendering main/landing.html.erb within layouts/application
+  Rendered main/landing.html.erb within layouts/application (Duration: 0.8ms | Allocations: 106)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 22.1ms | Allocations: 4037)
+Completed 200 OK in 33ms (Views: 32.3ms | Allocations: 5370)
+
+
+Started GET "/landing" for ::1 at 2021-08-09 14:43:32 -0700
+Processing by MainController#landing as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/landing.html.erb within layouts/application
+  Rendered main/landing.html.erb within layouts/application (Duration: 0.2ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16.9ms | Allocations: 3732)
+Completed 200 OK in 20ms (Views: 18.2ms | Allocations: 4148)
+
+
+Started GET "/landing" for ::1 at 2021-08-09 14:43:32 -0700
+Processing by MainController#landing as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/landing.html.erb within layouts/application
+  Rendered main/landing.html.erb within layouts/application (Duration: 0.3ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 20.9ms | Allocations: 3732)
+Completed 200 OK in 24ms (Views: 22.9ms | Allocations: 4147)
+
+
+Started GET "/landing" for ::1 at 2021-08-09 14:44:31 -0700
+Processing by MainController#landing as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/landing.html.erb within layouts/application
+  Rendered main/landing.html.erb within layouts/application (Duration: 0.7ms | Allocations: 41)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 51.1ms | Allocations: 3784)
+Completed 200 OK in 57ms (Views: 54.4ms | Allocations: 4387)
+
+
+Started GET "/landing" for ::1 at 2021-08-09 14:44:34 -0700
+Processing by MainController#landing as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/landing.html.erb within layouts/application
+  Rendered main/landing.html.erb within layouts/application (Duration: 0.2ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.9ms | Allocations: 3732)
+Completed 200 OK in 18ms (Views: 17.3ms | Allocations: 4147)
+
+
+Started GET "/landing" for ::1 at 2021-08-09 14:44:58 -0700
+Processing by MainController#landing as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/landing.html.erb (called from landing at /Users/learnacademy/Desktop/Learn Stuff/database-challenges/our_favorites/app/controllers/main_controller.rb:3)
+  Rendering layout layouts/application.html.erb
+  Rendering main/landing.html.erb within layouts/application
+  Rendered main/landing.html.erb within layouts/application (Duration: 0.9ms | Allocations: 111)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16.9ms | Allocations: 4046)
+Completed 200 OK in 31ms (Views: 28.6ms | Allocations: 5416)
+
+
+Started GET "/landing" for ::1 at 2021-08-09 14:45:00 -0700
+Processing by MainController#landing as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/landing.html.erb within layouts/application
+  Rendered main/landing.html.erb within layouts/application (Duration: 0.2ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 27.4ms | Allocations: 3733)
+Completed 200 OK in 30ms (Views: 28.7ms | Allocations: 4148)
+
+
+Started GET "/landing" for ::1 at 2021-08-09 14:45:00 -0700
+Processing by MainController#landing as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/landing.html.erb within layouts/application
+  Rendered main/landing.html.erb within layouts/application (Duration: 0.2ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.9ms | Allocations: 3732)
+Completed 200 OK in 21ms (Views: 19.9ms | Allocations: 4148)
+
+
+Started GET "/landing" for ::1 at 2021-08-09 14:45:20 -0700
+Processing by MainController#landing as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/landing.html.erb within layouts/application
+  Rendered main/landing.html.erb within layouts/application (Duration: 0.2ms | Allocations: 41)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 27.2ms | Allocations: 3779)
+Completed 200 OK in 32ms (Views: 30.4ms | Allocations: 4382)
+
+
+Started GET "/landing" for ::1 at 2021-08-09 14:45:21 -0700
+Processing by MainController#landing as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/landing.html.erb within layouts/application
+  Rendered main/landing.html.erb within layouts/application (Duration: 0.3ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 19.9ms | Allocations: 3732)
+Completed 200 OK in 22ms (Views: 21.4ms | Allocations: 4147)
+
+
+Started GET "/landing" for ::1 at 2021-08-09 14:45:21 -0700
+Processing by MainController#landing as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/landing.html.erb within layouts/application
+  Rendered main/landing.html.erb within layouts/application (Duration: 0.2ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.8ms | Allocations: 3732)
+Completed 200 OK in 20ms (Views: 19.2ms | Allocations: 4147)
+
+
+Started GET "/landing" for ::1 at 2021-08-09 14:45:43 -0700
+Processing by MainController#landing as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/landing.html.erb within layouts/application
+  Rendered main/landing.html.erb within layouts/application (Duration: 0.2ms | Allocations: 41)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 20.4ms | Allocations: 3805)
+Completed 200 OK in 24ms (Views: 23.1ms | Allocations: 4409)
+
+
+Started GET "/landing" for ::1 at 2021-08-09 14:45:45 -0700
+Processing by MainController#landing as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/landing.html.erb within layouts/application
+  Rendered main/landing.html.erb within layouts/application (Duration: 0.2ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.3ms | Allocations: 3732)
+Completed 200 OK in 17ms (Views: 16.3ms | Allocations: 4147)
+
+
+Started GET "/landing" for ::1 at 2021-08-09 14:45:46 -0700
+Processing by MainController#landing as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/landing.html.erb within layouts/application
+  Rendered main/landing.html.erb within layouts/application (Duration: 0.2ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.3ms | Allocations: 3732)
+Completed 200 OK in 13ms (Views: 12.5ms | Allocations: 4147)
+
+
+Started GET "/landing" for ::1 at 2021-08-09 14:45:46 -0700
+Processing by MainController#landing as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/landing.html.erb within layouts/application
+  Rendered main/landing.html.erb within layouts/application (Duration: 1.2ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.1ms | Allocations: 3737)
+Completed 200 OK in 20ms (Views: 18.9ms | Allocations: 4154)
+
+
+Started GET "/landing" for ::1 at 2021-08-09 14:45:46 -0700
+Processing by MainController#landing as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/landing.html.erb within layouts/application
+  Rendered main/landing.html.erb within layouts/application (Duration: 1.0ms | Allocations: 58)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 23.4ms | Allocations: 3876)
+Completed 200 OK in 26ms (Views: 25.3ms | Allocations: 4293)
+
+
+Started GET "/landing" for ::1 at 2021-08-09 14:45:47 -0700
+Processing by MainController#landing as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/landing.html.erb within layouts/application
+  Rendered main/landing.html.erb within layouts/application (Duration: 0.2ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 19.3ms | Allocations: 3732)
+Completed 200 OK in 22ms (Views: 20.7ms | Allocations: 4147)
+
+
+Started GET "/landing" for ::1 at 2021-08-09 14:45:47 -0700
+Processing by MainController#landing as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/landing.html.erb within layouts/application
+  Rendered main/landing.html.erb within layouts/application (Duration: 0.9ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 22.4ms | Allocations: 3732)
+Completed 200 OK in 25ms (Views: 24.3ms | Allocations: 4148)
+
+
+Started GET "/landing" for ::1 at 2021-08-09 14:45:48 -0700
+Processing by MainController#landing as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/landing.html.erb within layouts/application
+  Rendered main/landing.html.erb within layouts/application (Duration: 0.2ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.0ms | Allocations: 3732)
+Completed 200 OK in 17ms (Views: 16.4ms | Allocations: 4147)
+
+
+Started GET "/landing" for ::1 at 2021-08-09 14:46:20 -0700
+Processing by MainController#landing as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/landing.html.erb (called from landing at /Users/learnacademy/Desktop/Learn Stuff/database-challenges/our_favorites/app/controllers/main_controller.rb:6)
+  Rendering layout layouts/application.html.erb
+  Rendering main/landing.html.erb within layouts/application
+  Rendered main/landing.html.erb within layouts/application (Duration: 1.6ms | Allocations: 111)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 29.9ms | Allocations: 4041)
+Completed 200 OK in 43ms (Views: 41.7ms | Allocations: 5381)
+
+
+Started GET "/landing" for ::1 at 2021-08-09 14:46:21 -0700
+Processing by MainController#landing as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/landing.html.erb within layouts/application
+  Rendered main/landing.html.erb within layouts/application (Duration: 0.2ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.3ms | Allocations: 3732)
+Completed 200 OK in 10ms (Views: 9.9ms | Allocations: 4148)
+
+
+Started GET "/landing" for ::1 at 2021-08-09 14:46:22 -0700
+Processing by MainController#landing as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/landing.html.erb within layouts/application
+  Rendered main/landing.html.erb within layouts/application (Duration: 0.2ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.4ms | Allocations: 3732)
+Completed 200 OK in 19ms (Views: 18.2ms | Allocations: 4147)
+
+
+Started GET "/landing" for ::1 at 2021-08-09 14:46:58 -0700
+Processing by MainController#landing as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/landing.html.erb within layouts/application
+  Rendered main/landing.html.erb within layouts/application (Duration: 0.2ms | Allocations: 41)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 53.4ms | Allocations: 3784)
+Completed 200 OK in 62ms (Views: 60.2ms | Allocations: 4388)
+
+
+Started GET "/landing" for ::1 at 2021-08-09 14:47:10 -0700
+Processing by MainController#landing as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/landing.html.erb within layouts/application
+  Rendered main/landing.html.erb within layouts/application (Duration: 0.2ms | Allocations: 41)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.8ms | Allocations: 3805)
+Completed 200 OK in 24ms (Views: 21.0ms | Allocations: 4409)
+
+
+Started GET "/landing" for ::1 at 2021-08-09 14:47:11 -0700
+Processing by MainController#landing as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/landing.html.erb within layouts/application
+  Rendered main/landing.html.erb within layouts/application (Duration: 0.2ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 18.9ms | Allocations: 3732)
+Completed 200 OK in 21ms (Views: 20.1ms | Allocations: 4147)
+
+
+Started GET "/landing" for ::1 at 2021-08-09 14:47:20 -0700
+Processing by MainController#landing as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/landing.html.erb within layouts/application
+  Rendered main/landing.html.erb within layouts/application (Duration: 0.3ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16.6ms | Allocations: 3732)
+Completed 200 OK in 19ms (Views: 17.9ms | Allocations: 4148)
+
+
+Started GET "/conrad" for ::1 at 2021-08-09 14:47:25 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/conrad"):
+  
+Started GET "/conrad" for ::1 at 2021-08-09 14:47:37 -0700
+Processing by MainController#conrad as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/conrad.html.erb (called from conrad at /Users/learnacademy/Desktop/Learn Stuff/database-challenges/our_favorites/app/controllers/main_controller.rb:3)
+  Rendering layout layouts/application.html.erb
+  Rendering main/conrad.html.erb within layouts/application
+  Rendered main/conrad.html.erb within layouts/application (Duration: 1.9ms | Allocations: 108)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 25.3ms | Allocations: 3847)
+Completed 200 OK in 32ms (Views: 31.1ms | Allocations: 4736)
+
+
+Started GET "/landing" for ::1 at 2021-08-09 14:47:42 -0700
+Processing by MainController#landing as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/landing.html.erb within layouts/application
+  Rendered main/landing.html.erb within layouts/application (Duration: 0.3ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.1ms | Allocations: 3737)
+Completed 200 OK in 20ms (Views: 18.6ms | Allocations: 4152)
+
+
+Started GET "/conrad" for ::1 at 2021-08-09 14:47:44 -0700
+Processing by MainController#conrad as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/conrad.html.erb within layouts/application
+  Rendered main/conrad.html.erb within layouts/application (Duration: 0.3ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.6ms | Allocations: 3738)
+Completed 200 OK in 21ms (Views: 19.4ms | Allocations: 4155)
+
+
+Started GET "/landing" for ::1 at 2021-08-09 14:47:45 -0700
+Processing by MainController#landing as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/landing.html.erb within layouts/application
+  Rendered main/landing.html.erb within layouts/application (Duration: 0.1ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.0ms | Allocations: 3732)
+Completed 200 OK in 19ms (Views: 18.1ms | Allocations: 4147)
+
+
+Started GET "/landing" for ::1 at 2021-08-09 14:48:54 -0700
+Processing by MainController#landing as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/landing.html.erb (called from landing at /Users/learnacademy/Desktop/Learn Stuff/database-challenges/our_favorites/app/controllers/main_controller.rb:3)
+  Rendering layout layouts/application.html.erb
+  Rendering main/landing.html.erb within layouts/application
+  Rendered main/landing.html.erb within layouts/application (Duration: 3.3ms | Allocations: 109)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 60.4ms | Allocations: 4023)
+Completed 500 Internal Server Error in 77ms (Views: 72.6ms | Allocations: 5749)
+
+
+  
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  
+app/controllers/main_controller.rb:4:in `landing'
+Started GET "/landing" for ::1 at 2021-08-09 14:49:48 -0700
+Processing by MainController#landing as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/landing.html.erb within layouts/application
+  Rendered main/landing.html.erb within layouts/application (Duration: 0.2ms | Allocations: 41)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 71.3ms | Allocations: 3784)
+Completed 200 OK in 77ms (Views: 75.8ms | Allocations: 4388)
+
+
+Started GET "/landing" for ::1 at 2021-08-09 14:51:08 -0700
+Processing by MainController#landing as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/landing.html.erb (called from landing at /Users/learnacademy/Desktop/Learn Stuff/database-challenges/our_favorites/app/controllers/main_controller.rb:3)
+  Rendering layout layouts/application.html.erb
+  Rendering main/landing.html.erb within layouts/application
+  Rendered main/landing.html.erb within layouts/application (Duration: 0.7ms | Allocations: 111)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 26.8ms | Allocations: 4021)
+Completed 200 OK in 33ms (Views: 32.4ms | Allocations: 5390)
+
+
+Started GET "/landing" for ::1 at 2021-08-09 14:52:12 -0700
+Processing by MainController#landing as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/landing.html.erb (called from landing at /Users/learnacademy/Desktop/Learn Stuff/database-challenges/our_favorites/app/controllers/main_controller.rb:3)
+  Rendering layout layouts/application.html.erb
+  Rendering main/landing.html.erb within layouts/application
+  Rendered main/landing.html.erb within layouts/application (Duration: 3.8ms | Allocations: 113)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 55.5ms | Allocations: 4029)
+Completed 200 OK in 68ms (Views: 66.8ms | Allocations: 5399)
+
+
+Started GET "/landing" for ::1 at 2021-08-09 14:52:28 -0700
+Processing by MainController#landing as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/landing.html.erb (called from landing at /Users/learnacademy/Desktop/Learn Stuff/database-challenges/our_favorites/app/controllers/main_controller.rb:3)
+  Rendering layout layouts/application.html.erb
+  Rendering main/landing.html.erb within layouts/application
+  Rendered main/landing.html.erb within layouts/application (Duration: 0.9ms | Allocations: 114)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 25.4ms | Allocations: 4045)
+Completed 200 OK in 36ms (Views: 35.0ms | Allocations: 5376)
+
+
+Started GET "/landing" for ::1 at 2021-08-09 15:09:19 -0700
+Processing by MainController#landing as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/landing.html.erb (called from landing at /Users/learnacademy/Desktop/Learn Stuff/database-challenges/our_favorites/app/controllers/main_controller.rb:3)
+  Rendering layout layouts/application.html.erb
+  Rendering main/landing.html.erb within layouts/application
+  Rendered main/landing.html.erb within layouts/application (Duration: 7.6ms | Allocations: 1566)
+  Rendered layout layouts/application.html.erb (Duration: 8.3ms | Allocations: 1635)
+Completed 500 Internal Server Error in 22ms (Allocations: 2976)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    2: <p>Conrad's Favorite Restraunts</p>
+    3: 
+    4:     <ul>
+    5:         <% @conrads_restraunts.each do |value|%>
+    6:             <li> <%= value %> </li>
+    7:         <% end %>
+    8:     </ul>
+  
+app/views/main/landing.html.erb:5
+app/controllers/main_controller.rb:3:in `landing'
+Started GET "/landing" for ::1 at 2021-08-09 15:10:44 -0700
+Processing by MainController#landing as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/landing.html.erb within layouts/application
+  Rendered main/landing.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1368)
+  Rendered layout layouts/application.html.erb (Duration: 3.1ms | Allocations: 1437)
+Completed 500 Internal Server Error in 7ms (Allocations: 2007)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    2: <p>Conrad's Favorite Restraunts</p>
+    3: 
+    4:     <ul>
+    5:         <% @conrads_restraunts.each do |value|%>
+    6:             <li> <%= value %> </li>
+    7:         <% end %>
+    8:     </ul>
+  
+app/views/main/landing.html.erb:5
+app/controllers/main_controller.rb:3:in `landing'
+Started GET "/landing" for ::1 at 2021-08-09 15:12:09 -0700
+Processing by MainController#landing as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/landing.html.erb (called from landing at /Users/learnacademy/Desktop/Learn Stuff/database-challenges/our_favorites/app/controllers/main_controller.rb:3)
+  Rendering layout layouts/application.html.erb
+  Rendering main/landing.html.erb within layouts/application
+  Rendered main/landing.html.erb within layouts/application (Duration: 5.6ms | Allocations: 1528)
+  Rendered layout layouts/application.html.erb (Duration: 6.2ms | Allocations: 1597)
+Completed 500 Internal Server Error in 23ms (Allocations: 2899)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    2: <p>Conrad's Favorite Restraunts</p>
+    3: 
+    4:     <ul>
+    5:         <% @restraunt_favorites.each do |value|%>
+    6:             <li> <%= value %> </li>
+    7:         <% end %>
+    8:     </ul>
+  
+app/views/main/landing.html.erb:5
+app/controllers/main_controller.rb:3:in `landing'
+Started GET "/landing" for ::1 at 2021-08-09 15:13:32 -0700
+Processing by MainController#landing as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/landing.html.erb (called from landing at /Users/learnacademy/Desktop/Learn Stuff/database-challenges/our_favorites/app/controllers/main_controller.rb:3)
+  Rendering layout layouts/application.html.erb
+  Rendering main/landing.html.erb within layouts/application
+  Rendered main/landing.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1530)
+  Rendered layout layouts/application.html.erb (Duration: 4.3ms | Allocations: 1599)
+Completed 500 Internal Server Error in 16ms (Allocations: 2902)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    2: <p>"Conrad's Favorite Restraunts"</p>
+    3: 
+    4:     <ul>
+    5:         <% @restraunt_favorites.each do |value|%>
+    6:             <li> <%= value %> </li>
+    7:         <% end %>
+    8:     </ul>
+  
+app/views/main/landing.html.erb:5
+app/controllers/main_controller.rb:3:in `landing'
+Started GET "/landing" for ::1 at 2021-08-09 15:14:46 -0700
+Processing by MainController#landing as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/landing.html.erb within layouts/application
+  Rendered main/landing.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1368)
+  Rendered layout layouts/application.html.erb (Duration: 3.7ms | Allocations: 1437)
+Completed 500 Internal Server Error in 8ms (Allocations: 2007)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    2: <p>"Conrad's Favorite Restraunts"</p>
+    3: 
+    4:     <ul>
+    5:         <% @restraunt_favorites.each do |value|%>
+    6:             <li> <%= value %> </li>
+    7:         <% end %>
+    8:     </ul>
+  
+app/views/main/landing.html.erb:5
+app/controllers/main_controller.rb:3:in `landing'
+Started GET "/conrads_restraunts" for ::1 at 2021-08-09 15:16:10 -0700
+Processing by MainController#conrads_restraunts as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/restraunts.html.erb (called from conrads_restraunts at /Users/learnacademy/Desktop/Learn Stuff/database-challenges/our_favorites/app/controllers/main_controller.rb:7)
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/restraunts.html.erb (called from conrads_restraunts at /Users/learnacademy/Desktop/Learn Stuff/database-challenges/our_favorites/app/controllers/main_controller.rb:7)
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/restraunts.html.erb (called from conrads_restraunts at /Users/learnacademy/Desktop/Learn Stuff/database-challenges/our_favorites/app/controllers/main_controller.rb:7)
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: application/restraunts.html.erb (called from conrads_restraunts at /Users/learnacademy/Desktop/Learn Stuff/database-challenges/our_favorites/app/controllers/main_controller.rb:7)
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: application/restraunts.html.erb (called from conrads_restraunts at /Users/learnacademy/Desktop/Learn Stuff/database-challenges/our_favorites/app/controllers/main_controller.rb:7)
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: application/restraunts.html.erb (called from conrads_restraunts at /Users/learnacademy/Desktop/Learn Stuff/database-challenges/our_favorites/app/controllers/main_controller.rb:7)
+Completed 500 Internal Server Error in 22ms (Allocations: 2504)
+
+
+  
+ActionView::MissingTemplate (Missing template main/restraunts.html.erb, application/restraunts.html.erb with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/learnacademy/Desktop/Learn Stuff/database-challenges/our_favorites/app/views"
+  * "/Users/learnacademy/.rvm/gems/ruby-3.0.0/gems/actiontext-6.1.4/app/views"
+  * "/Users/learnacademy/.rvm/gems/ruby-3.0.0/gems/actionmailbox-6.1.4/app/views"
+):
+  
+app/controllers/main_controller.rb:7:in `conrads_restraunts'
+Started GET "/conrads_restraunts" for ::1 at 2021-08-09 15:16:29 -0700
+Processing by MainController#conrads_restraunts as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/conrads_restraunts.html.erb (called from conrads_restraunts at /Users/learnacademy/Desktop/Learn Stuff/database-challenges/our_favorites/app/controllers/main_controller.rb:7)
+  Rendering layout layouts/application.html.erb
+  Rendering main/conrads_restraunts.html.erb within layouts/application
+  Rendered main/conrads_restraunts.html.erb within layouts/application (Duration: 1.9ms | Allocations: 173)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 32.9ms | Allocations: 4089)
+Completed 200 OK in 46ms (Views: 44.2ms | Allocations: 5425)
+
+
+Started GET "/landing" for ::1 at 2021-08-09 15:16:48 -0700
+Processing by MainController#landing as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/landing.html.erb (called from landing at /Users/learnacademy/Desktop/Learn Stuff/database-challenges/our_favorites/app/controllers/main_controller.rb:3)
+  Rendering layout layouts/application.html.erb
+  Rendering main/landing.html.erb within layouts/application
+  Rendered main/landing.html.erb within layouts/application (Duration: 4.9ms | Allocations: 1530)
+  Rendered layout layouts/application.html.erb (Duration: 5.6ms | Allocations: 1599)
+Completed 500 Internal Server Error in 18ms (Allocations: 2898)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    2: <p>"Conrad's Favorite Restraunts"</p>
+    3: 
+    4: <ul>
+    5:     <% @restraunt_favorites.each do |value|%>
+    6:         <li> <%= value %> </li>
+    7:     <% end %>
+    8: </ul>
+  
+app/views/main/landing.html.erb:5
+app/controllers/main_controller.rb:3:in `landing'
+Started GET "/landing" for ::1 at 2021-08-09 15:16:49 -0700
+Processing by MainController#landing as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/landing.html.erb within layouts/application
+  Rendered main/landing.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1387)
+  Rendered layout layouts/application.html.erb (Duration: 2.8ms | Allocations: 1455)
+Completed 500 Internal Server Error in 5ms (Allocations: 1834)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    2: <p>"Conrad's Favorite Restraunts"</p>
+    3: 
+    4: <ul>
+    5:     <% @restraunt_favorites.each do |value|%>
+    6:         <li> <%= value %> </li>
+    7:     <% end %>
+    8: </ul>
+  
+app/views/main/landing.html.erb:5
+app/controllers/main_controller.rb:3:in `landing'
+Started GET "/landing" for ::1 at 2021-08-09 15:17:18 -0700
+Processing by MainController#landing as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/landing.html.erb within layouts/application
+  Rendered main/landing.html.erb within layouts/application (Duration: 5.7ms | Allocations: 1368)
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 1437)
+Completed 500 Internal Server Error in 12ms (Allocations: 2007)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    2: <p>"Conrad's Favorite Restraunts"</p>
+    3: 
+    4: <ul>
+    5:     <% @restraunt_favorites.each do |value|%>
+    6:         <li> <%= value %> </li>
+    7:     <% end %>
+    8: </ul>
+  
+app/views/main/landing.html.erb:5
+app/controllers/main_controller.rb:3:in `landing'
+Started GET "/landing" for ::1 at 2021-08-09 15:17:44 -0700
+Processing by MainController#landing as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/landing.html.erb within layouts/application
+  Rendered main/landing.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1389)
+  Rendered layout layouts/application.html.erb (Duration: 3.1ms | Allocations: 1458)
+Completed 500 Internal Server Error in 6ms (Allocations: 2028)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    2: <p>"Conrad's Favorite Restraunts"</p>
+    3: 
+    4: <ul>
+    5:     <% @restraunt_favorites.each do |value|%>
+    6:         <li> <%= value %> </li>
+    7:     <% end %>
+    8: </ul>
+  
+app/views/main/landing.html.erb:5
+app/controllers/main_controller.rb:3:in `landing'
+Started GET "/landing" for ::1 at 2021-08-09 15:17:54 -0700
+Processing by MainController#landing as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/landing.html.erb (called from landing at /Users/learnacademy/Desktop/Learn Stuff/database-challenges/our_favorites/app/controllers/main_controller.rb:3)
+  Rendering layout layouts/application.html.erb
+  Rendering main/landing.html.erb within layouts/application
+  Rendered main/landing.html.erb within layouts/application (Duration: 4.7ms | Allocations: 1528)
+  Rendered layout layouts/application.html.erb (Duration: 5.8ms | Allocations: 1597)
+Completed 500 Internal Server Error in 27ms (Allocations: 2899)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    2: <p>"Conrad's Favorite Restraunts"</p>
+    3: 
+    4: <ul>
+    5:     <% @restraunt_favorites.each do |value|%>
+    6:         <li> <%= value %> </li>
+    7:     <% end %>
+    8: </ul>
+  
+app/views/main/landing.html.erb:5
+app/controllers/main_controller.rb:3:in `landing'
+Started GET "/landing" for ::1 at 2021-08-09 15:19:24 -0700
+Processing by MainController#landing as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/landing.html.erb (called from landing at /Users/learnacademy/Desktop/Learn Stuff/database-challenges/our_favorites/app/controllers/main_controller.rb:3)
+  Rendering layout layouts/application.html.erb
+  Rendering main/landing.html.erb within layouts/application
+  Rendered main/landing.html.erb within layouts/application (Duration: 6.2ms | Allocations: 115)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 40.6ms | Allocations: 4030)
+Completed 200 OK in 55ms (Views: 53.0ms | Allocations: 5402)
+
+
+Started GET "/landing" for ::1 at 2021-08-09 15:22:26 -0700
+Processing by MainController#landing as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/landing.html.erb (called from landing at /Users/learnacademy/Desktop/Learn Stuff/database-challenges/our_favorites/app/controllers/main_controller.rb:3)
+  Rendering layout layouts/application.html.erb
+  Rendering main/landing.html.erb within layouts/application
+  Rendered main/landing.html.erb within layouts/application (Duration: 1.9ms | Allocations: 119)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 97.4ms | Allocations: 4034)
+Completed 200 OK in 110ms (Views: 108.7ms | Allocations: 5403)
+
+
+Started GET "/conrads_restraunts" for ::1 at 2021-08-09 15:22:32 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/conrads_restraunts"):
+  
+Started GET "/conrads_restraunts" for ::1 at 2021-08-09 15:23:28 -0700
+Processing by MainController#conrads_restraunts as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/conrads_restraunts.html.erb (called from conrads_restraunts at /Users/learnacademy/Desktop/Learn Stuff/database-challenges/our_favorites/app/controllers/main_controller.rb:10)
+  Rendering layout layouts/application.html.erb
+  Rendering main/conrads_restraunts.html.erb within layouts/application
+  Rendered main/conrads_restraunts.html.erb within layouts/application (Duration: 7.2ms | Allocations: 1519)
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 1588)
+Completed 500 Internal Server Error in 17ms (Allocations: 2443)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: # <ul>
+    2: #     <% @restraunt_favorites.each do |value|%>
+    3: #         <li> <%= value %> </li>
+    4: #     <% end %>
+    5: # </ul>
+  
+app/views/main/conrads_restraunts.html.erb:2
+app/controllers/main_controller.rb:10:in `conrads_restraunts'
+Started GET "/conrads_restraunts" for ::1 at 2021-08-09 15:23:48 -0700
+Processing by MainController#conrads_restraunts as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/conrads_restraunts.html.erb (called from conrads_restraunts at /Users/learnacademy/Desktop/Learn Stuff/database-challenges/our_favorites/app/controllers/main_controller.rb:10)
+  Rendering layout layouts/application.html.erb
+  Rendering main/conrads_restraunts.html.erb within layouts/application
+  Rendered main/conrads_restraunts.html.erb within layouts/application (Duration: 1.6ms | Allocations: 147)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 56.0ms | Allocations: 4079)
+Completed 200 OK in 68ms (Views: 66.9ms | Allocations: 5418)
+
+
+Started GET "/conrads_restraunts" for ::1 at 2021-08-09 15:23:59 -0700
+Processing by MainController#conrads_restraunts as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/conrads_restraunts.html.erb (called from conrads_restraunts at /Users/learnacademy/Desktop/Learn Stuff/database-challenges/our_favorites/app/controllers/main_controller.rb:10)
+  Rendering layout layouts/application.html.erb
+  Rendering main/conrads_restraunts.html.erb within layouts/application
+  Rendered main/conrads_restraunts.html.erb within layouts/application (Duration: 1.7ms | Allocations: 149)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 21.4ms | Allocations: 4077)
+Completed 200 OK in 32ms (Views: 31.0ms | Allocations: 5409)
+
+
+Started GET "/" for ::1 at 2021-08-09 15:24:00 -0700
+  
+ActionController::RoutingError (uninitialized constant FoodController):
+  
+Started GET "/landing" for ::1 at 2021-08-09 15:26:26 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/landing"):
+  
+Started GET "/" for ::1 at 2021-08-09 15:26:34 -0700
+Processing by MainController#landing as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/landing.html.erb (called from landing at /Users/learnacademy/Desktop/Learn Stuff/database-challenges/our_favorites/app/controllers/main_controller.rb:3)
+  Rendering layout layouts/application.html.erb
+  Rendering main/landing.html.erb within layouts/application
+  Rendered main/landing.html.erb within layouts/application (Duration: 4.2ms | Allocations: 113)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 30.4ms | Allocations: 4049)
+Completed 200 OK in 41ms (Views: 40.5ms | Allocations: 5416)
+
+
+Started GET "/conrads_restraunts" for ::1 at 2021-08-09 15:26:41 -0700
+Processing by MainController#conrads_restraunts as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/conrads_restraunts.html.erb (called from conrads_restraunts at /Users/learnacademy/Desktop/Learn Stuff/database-challenges/our_favorites/app/controllers/main_controller.rb:7)
+  Rendering layout layouts/application.html.erb
+  Rendering main/conrads_restraunts.html.erb within layouts/application
+  Rendered main/conrads_restraunts.html.erb within layouts/application (Duration: 1.8ms | Allocations: 143)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.2ms | Allocations: 3836)
+Completed 200 OK in 19ms (Views: 18.1ms | Allocations: 4533)
+
+
+Started GET "/" for ::1 at 2021-08-09 15:26:43 -0700
+Processing by MainController#landing as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/landing.html.erb within layouts/application
+  Rendered main/landing.html.erb within layouts/application (Duration: 0.2ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 30.1ms | Allocations: 4339)
+Completed 200 OK in 32ms (Views: 31.1ms | Allocations: 4758)
+
+
+Started GET "/" for ::1 at 2021-08-09 15:28:26 -0700
+Processing by MainController#landing as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/landing.html.erb (called from landing at /Users/learnacademy/Desktop/Learn Stuff/database-challenges/our_favorites/app/controllers/main_controller.rb:3)
+  Rendering layout layouts/application.html.erb
+  Rendering main/landing.html.erb within layouts/application
+  Rendered main/landing.html.erb within layouts/application (Duration: 6.0ms | Allocations: 120)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 32.9ms | Allocations: 4030)
+Completed 200 OK in 44ms (Views: 42.0ms | Allocations: 5398)
+
+
+Started GET "/test" for ::1 at 2021-08-09 15:28:32 -0700
+Processing by MainController#test as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/test.html.erb (called from test at /Users/learnacademy/Desktop/Learn Stuff/database-challenges/our_favorites/app/controllers/main_controller.rb:7)
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 1.7ms | Allocations: 143)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 23.0ms | Allocations: 3836)
+Completed 200 OK in 30ms (Views: 28.7ms | Allocations: 4532)
+
+
+Started GET "/" for ::1 at 2021-08-09 15:28:34 -0700
+Processing by MainController#landing as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/landing.html.erb within layouts/application
+  Rendered main/landing.html.erb within layouts/application (Duration: 0.2ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 23.2ms | Allocations: 4332)
+Completed 200 OK in 26ms (Views: 24.8ms | Allocations: 4750)
+
+
+Started GET "/" for ::1 at 2021-08-09 15:31:23 -0700
+Processing by MainController#landing as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/landing.html.erb (called from landing at /Users/learnacademy/Desktop/Learn Stuff/database-challenges/our_favorites/app/controllers/main_controller.rb:3)
+  Rendering layout layouts/application.html.erb
+  Rendering main/landing.html.erb within layouts/application
+  Rendered main/landing.html.erb within layouts/application (Duration: 1.1ms | Allocations: 220)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 35.5ms | Allocations: 4153)
+Completed 200 OK in 57ms (Views: 54.3ms | Allocations: 5493)
+
+
+Started GET "/test" for ::1 at 2021-08-09 15:31:25 -0700
+Processing by MainController#test as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/test.html.erb (called from test at /Users/learnacademy/Desktop/Learn Stuff/database-challenges/our_favorites/app/controllers/main_controller.rb:7)
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 2.6ms | Allocations: 136)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 48.3ms | Allocations: 4427)
+Completed 200 OK in 55ms (Views: 52.1ms | Allocations: 5128)
+
+
+Started GET "/" for ::1 at 2021-08-09 15:31:26 -0700
+Processing by MainController#landing as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/landing.html.erb within layouts/application
+  Rendered main/landing.html.erb within layouts/application (Duration: 0.3ms | Allocations: 70)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 45.5ms | Allocations: 3768)
+Completed 200 OK in 51ms (Views: 49.5ms | Allocations: 4187)
+
+
+Started GET "/test" for ::1 at 2021-08-09 15:31:27 -0700
+Processing by MainController#test as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 0.2ms | Allocations: 49)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 34.2ms | Allocations: 3742)
+Completed 200 OK in 37ms (Views: 35.6ms | Allocations: 4160)
+
+
+Started GET "/" for ::1 at 2021-08-09 15:31:28 -0700
+Processing by MainController#landing as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/landing.html.erb within layouts/application
+  Rendered main/landing.html.erb within layouts/application (Duration: 0.3ms | Allocations: 70)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 38.8ms | Allocations: 4374)
+Completed 200 OK in 42ms (Views: 40.2ms | Allocations: 4792)
+
+
+Started GET "/" for ::1 at 2021-08-09 15:35:07 -0700
+Processing by MainController#landing as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/landing.html.erb (called from landing at /Users/learnacademy/Desktop/Learn Stuff/database-challenges/our_favorites/app/controllers/main_controller.rb:3)
+  Rendering layout layouts/application.html.erb
+  Rendering main/landing.html.erb within layouts/application
+  Rendered main/landing.html.erb within layouts/application (Duration: 2.4ms | Allocations: 223)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 54.3ms | Allocations: 4130)
+Completed 200 OK in 66ms (Views: 65.2ms | Allocations: 5498)
+
+
+Started GET "/the_olive_garden" for ::1 at 2021-08-09 15:35:09 -0700
+Processing by MainController#the_olive_garden as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/the_olive_garden.html.erb (called from the_olive_garden at /Users/learnacademy/Desktop/Learn Stuff/database-challenges/our_favorites/app/controllers/main_controller.rb:10)
+  Rendering layout layouts/application.html.erb
+  Rendering main/the_olive_garden.html.erb within layouts/application
+  Rendered main/the_olive_garden.html.erb within layouts/application (Duration: 1.4ms | Allocations: 130)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 26.8ms | Allocations: 4435)
+Completed 200 OK in 33ms (Views: 32.5ms | Allocations: 5134)
+
+
+Started GET "/" for ::1 at 2021-08-09 15:35:10 -0700
+Processing by MainController#landing as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/landing.html.erb within layouts/application
+  Rendered main/landing.html.erb within layouts/application (Duration: 0.4ms | Allocations: 70)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 52.2ms | Allocations: 4360)
+Completed 200 OK in 55ms (Views: 54.2ms | Allocations: 4779)
+
+
+Started GET "/buffalo_wild_wings" for ::1 at 2021-08-09 15:35:11 -0700
+Processing by MainController#buffalo_wild_wings as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/buffalo_wild_wings.html.erb (called from buffalo_wild_wings at /Users/learnacademy/Desktop/Learn Stuff/database-challenges/our_favorites/app/controllers/main_controller.rb:16)
+  Rendering layout layouts/application.html.erb
+  Rendering main/buffalo_wild_wings.html.erb within layouts/application
+  Rendered main/buffalo_wild_wings.html.erb within layouts/application (Duration: 4.4ms | Allocations: 133)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 38.6ms | Allocations: 4441)
+Completed 200 OK in 49ms (Views: 47.5ms | Allocations: 5145)
+
+
+Started GET "/" for ::1 at 2021-08-09 15:35:13 -0700
+Processing by MainController#landing as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/landing.html.erb within layouts/application
+  Rendered main/landing.html.erb within layouts/application (Duration: 1.5ms | Allocations: 70)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 43.4ms | Allocations: 4279)
+Completed 200 OK in 46ms (Views: 45.4ms | Allocations: 4742)
+
+
+Started GET "/cheesecake_factory" for ::1 at 2021-08-09 15:35:14 -0700
+Processing by MainController#cheesecake_factory as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/cheesecake_factory.html.erb (called from cheesecake_factory at /Users/learnacademy/Desktop/Learn Stuff/database-challenges/our_favorites/app/controllers/main_controller.rb:13)
+  Rendering layout layouts/application.html.erb
+  Rendering main/cheesecake_factory.html.erb within layouts/application
+  Rendered main/cheesecake_factory.html.erb within layouts/application (Duration: 2.2ms | Allocations: 137)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 33.3ms | Allocations: 4434)
+Completed 200 OK in 40ms (Views: 38.5ms | Allocations: 5133)
+
+
+Started GET "/cheesecake_factory" for ::1 at 2021-08-09 15:35:15 -0700
+Processing by MainController#cheesecake_factory as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/cheesecake_factory.html.erb within layouts/application
+  Rendered main/cheesecake_factory.html.erb within layouts/application (Duration: 0.1ms | Allocations: 49)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.1ms | Allocations: 3742)
+Completed 200 OK in 19ms (Views: 18.0ms | Allocations: 4157)
+
+
+Started GET "/" for ::1 at 2021-08-09 15:35:16 -0700
+Processing by MainController#landing as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/landing.html.erb within layouts/application
+  Rendered main/landing.html.erb within layouts/application (Duration: 1.1ms | Allocations: 70)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 25.0ms | Allocations: 4374)
+Completed 200 OK in 28ms (Views: 26.9ms | Allocations: 4792)
+
+
+Started GET "/" for ::1 at 2021-08-09 15:43:09 -0700
+  
+SyntaxError (/Users/learnacademy/Desktop/Learn Stuff/database-challenges/our_favorites/app/controllers/main_controller.rb:14: syntax error, unexpected '-', expecting ';' or '\n'
+    def in-n-out
+          ^
+/Users/learnacademy/Desktop/Learn Stuff/database-challenges/our_favorites/app/controllers/main_controller.rb:23: syntax error, unexpected `end', expecting end-of-input):
+  
+app/controllers/main_controller.rb:14: syntax error, unexpected '-', expecting ';' or '\n'
+app/controllers/main_controller.rb:23: syntax error, unexpected `end', expecting end-of-input
+app/controllers/main_controller.rb:14: syntax error, unexpected '-', expecting ';' or '\n'
+app/controllers/main_controller.rb:23: syntax error, unexpected `end', expecting end-of-input
+app/controllers/main_controller.rb:14: syntax error, unexpected '-', expecting ';' or '\n'
+app/controllers/main_controller.rb:23: syntax error, unexpected `end', expecting end-of-input
+Started GET "/" for ::1 at 2021-08-09 15:44:05 -0700
+Processing by MainController#landing as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/landing.html.erb (called from landing at /Users/learnacademy/Desktop/Learn Stuff/database-challenges/our_favorites/app/controllers/main_controller.rb:3)
+  Rendering layout layouts/application.html.erb
+  Rendering main/landing.html.erb within layouts/application
+  Rendered main/landing.html.erb within layouts/application (Duration: 2.9ms | Allocations: 306)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 53.8ms | Allocations: 4218)
+Completed 200 OK in 65ms (Views: 63.3ms | Allocations: 5586)
+
+
+Started GET "/in_n_out" for ::1 at 2021-08-09 15:44:07 -0700
+Processing by MainController#in_n_out as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/in_n_out.html.erb (called from in_n_out at /Users/learnacademy/Desktop/Learn Stuff/database-challenges/our_favorites/app/controllers/main_controller.rb:15)
+  Rendering layout layouts/application.html.erb
+  Rendering main/in_n_out.html.erb within layouts/application
+  Rendered main/in_n_out.html.erb within layouts/application (Duration: 2.7ms | Allocations: 130)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 54.8ms | Allocations: 4424)
+Completed 200 OK in 63ms (Views: 61.6ms | Allocations: 5123)
+
+
+Started GET "/" for ::1 at 2021-08-09 15:44:08 -0700
+Processing by MainController#landing as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/landing.html.erb within layouts/application
+  Rendered main/landing.html.erb within layouts/application (Duration: 0.3ms | Allocations: 100)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 25.6ms | Allocations: 3793)
+Completed 200 OK in 29ms (Views: 27.4ms | Allocations: 4211)
+
+
+Started GET "/sushi_house" for ::1 at 2021-08-09 15:44:10 -0700
+Processing by MainController#sushi_house as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/sushi_house.html.erb (called from sushi_house at /Users/learnacademy/Desktop/Learn Stuff/database-challenges/our_favorites/app/controllers/main_controller.rb:21)
+  Rendering layout layouts/application.html.erb
+  Rendering main/sushi_house.html.erb within layouts/application
+  Rendered main/sushi_house.html.erb within layouts/application (Duration: 1.8ms | Allocations: 157)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 39.7ms | Allocations: 3971)
+Completed 200 OK in 56ms (Views: 53.8ms | Allocations: 5127)
+
+
+Started GET "/" for ::1 at 2021-08-09 15:44:11 -0700
+Processing by MainController#landing as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/landing.html.erb within layouts/application
+  Rendered main/landing.html.erb within layouts/application (Duration: 0.4ms | Allocations: 100)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 19.7ms | Allocations: 3793)
+Completed 200 OK in 22ms (Views: 20.9ms | Allocations: 4211)
+
+
+Started GET "/" for ::1 at 2021-08-09 15:46:57 -0700
+Processing by MainController#landing as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/landing.html.erb (called from landing at /Users/learnacademy/Desktop/Learn Stuff/database-challenges/our_favorites/app/controllers/main_controller.rb:3)
+  Rendering layout layouts/application.html.erb
+  Rendering main/landing.html.erb within layouts/application
+  Rendered main/landing.html.erb within layouts/application (Duration: 4.0ms | Allocations: 303)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 31.4ms | Allocations: 4215)
+Completed 200 OK in 40ms (Views: 38.9ms | Allocations: 5584)
+
+
+Started GET "/the_olive_garden" for ::1 at 2021-08-09 15:46:59 -0700
+Processing by MainController#the_olive_garden as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/the_olive_garden.html.erb (called from the_olive_garden at /Users/learnacademy/Desktop/Learn Stuff/database-challenges/our_favorites/app/controllers/main_controller.rb:6)
+  Rendering layout layouts/application.html.erb
+  Rendering main/the_olive_garden.html.erb within layouts/application
+  Rendered main/the_olive_garden.html.erb within layouts/application (Duration: 2.4ms | Allocations: 132)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 30.3ms | Allocations: 4420)
+Completed 200 OK in 36ms (Views: 35.0ms | Allocations: 5120)
+
+
+Started GET "/" for ::1 at 2021-08-09 15:47:00 -0700
+Processing by MainController#landing as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/landing.html.erb within layouts/application
+  Rendered main/landing.html.erb within layouts/application (Duration: 0.3ms | Allocations: 100)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 49.1ms | Allocations: 4387)
+Completed 200 OK in 52ms (Views: 50.4ms | Allocations: 4805)
+
+
+Started GET "/pizza_port" for ::1 at 2021-08-09 15:47:01 -0700
+Processing by MainController#pizza_port as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/pizza_port.html.erb (called from pizza_port at /Users/learnacademy/Desktop/Learn Stuff/database-challenges/our_favorites/app/controllers/main_controller.rb:18)
+  Rendering layout layouts/application.html.erb
+  Rendering main/pizza_port.html.erb within layouts/application
+  Rendered main/pizza_port.html.erb within layouts/application (Duration: 1.3ms | Allocations: 135)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 24.6ms | Allocations: 4426)
+Completed 200 OK in 31ms (Views: 30.4ms | Allocations: 5129)
+
+
+Started GET "/" for ::1 at 2021-08-09 15:47:02 -0700
+Processing by MainController#landing as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/landing.html.erb within layouts/application
+  Rendered main/landing.html.erb within layouts/application (Duration: 0.3ms | Allocations: 100)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 23.7ms | Allocations: 4399)
+Completed 200 OK in 26ms (Views: 24.8ms | Allocations: 4817)
+
+
+Started GET "/in_n_out" for ::1 at 2021-08-09 15:47:03 -0700
+Processing by MainController#in_n_out as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/in_n_out.html.erb (called from in_n_out at /Users/learnacademy/Desktop/Learn Stuff/database-challenges/our_favorites/app/controllers/main_controller.rb:15)
+  Rendering layout layouts/application.html.erb
+  Rendering main/in_n_out.html.erb within layouts/application
+  Rendered main/in_n_out.html.erb within layouts/application (Duration: 1.4ms | Allocations: 131)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 21.4ms | Allocations: 4430)
+Completed 200 OK in 25ms (Views: 24.2ms | Allocations: 5129)
+
+
+Started GET "/" for ::1 at 2021-08-09 15:47:04 -0700
+Processing by MainController#landing as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/landing.html.erb within layouts/application
+  Rendered main/landing.html.erb within layouts/application (Duration: 0.3ms | Allocations: 100)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 26.5ms | Allocations: 4387)
+Completed 200 OK in 29ms (Views: 27.6ms | Allocations: 4805)
+
+
