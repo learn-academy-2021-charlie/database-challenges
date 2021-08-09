@@ -1,10 +1,12 @@
 <h1>Alfonsos top 3 Movies</h1>
 <ul>
 
-<% @movies.each do |movie| %>
+<% @movies.each do |key, value| %>
 
-  <li><%= movie %></li>
+  <li><%=link_to key, value %></li>
 
 <% end %>
 
 </ul>
+
+<%=link_to 'home', '/' %> 

@@ -1,0 +1,13 @@
+<h1>Thomas top 3 Movies</h1>
+<ul>
+
+<% @movies.each do |key,value| %>
+
+  <li><%= link_to key, value,target: :_blank %></li>
+
+
+<% end %>
+
+</ul>
+
+<%=link_to 'home', '/' %> 
