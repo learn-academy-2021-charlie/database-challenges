@@ -1,0 +1,2 @@
+class ThomasController < ApplicationController
+end

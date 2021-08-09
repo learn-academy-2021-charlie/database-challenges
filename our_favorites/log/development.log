@@ -1,0 +1,279 @@
+  [1m[35m (768.8ms)[0m  [1m[35mCREATE DATABASE "our_favorites_development" ENCODING = 'unicode'[0m
+  [1m[35m (286.0ms)[0m  [1m[35mCREATE DATABASE "our_favorites_test" ENCODING = 'unicode'[0m
+Started GET "/" for ::1 at 2021-08-09 14:25:59 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/learnacademy/.rvm/gems/ruby-3.0.0/gems/railties-6.1.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/learnacademy/.rvm/gems/ruby-3.0.0/gems/railties-6.1.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 22.3ms | Allocations: 522)
+Completed 200 OK in 419ms (Views: 51.6ms | ActiveRecord: 0.0ms | Allocations: 4259)
+
+
+Started GET "/welcome" for ::1 at 2021-08-09 14:29:00 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/welcome"):
+  
+Started GET "/" for ::1 at 2021-08-09 14:29:05 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/learnacademy/.rvm/gems/ruby-3.0.0/gems/railties-6.1.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/learnacademy/.rvm/gems/ruby-3.0.0/gems/railties-6.1.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 11.3ms | Allocations: 219)
+Completed 200 OK in 14ms (Views: 12.7ms | ActiveRecord: 0.0ms | Allocations: 956)
+
+
+Started GET "/" for ::1 at 2021-08-09 14:30:16 -0700
+Processing by MainController#welcome as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/welcome.html.erb (called from welcome at /Users/learnacademy/Desktop/database-challenges/our_favorites/app/controllers/main_controller.rb:3)
+  Rendering layout layouts/application.html.erb
+  Rendering main/welcome.html.erb within layouts/application
+  Rendered main/welcome.html.erb within layouts/application (Duration: 1.2ms | Allocations: 109)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/learnacademy/Desktop/database-challenges/our_favorites/public/packs
+[Webpacker] Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-property-in-object.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-property-in-object.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-property-in-object.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-property-in-object.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-property-in-object.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-property-in-object.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+[Webpacker] Hash: e2a8a876c5815bee1e21
+Version: webpack 4.46.0
+Time: 5877ms
+Built at: 08/09/2021 2:30:28 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 11719.3ms | Allocations: 20702)
+Completed 200 OK in 11730ms (Views: 11729.2ms | ActiveRecord: 0.0ms | Allocations: 22097)
+
+
+Started GET "/" for ::1 at 2021-08-09 14:30:37 -0700
+Processing by MainController#welcome as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/welcome.html.erb within layouts/application
+  Rendered main/welcome.html.erb within layouts/application (Duration: 0.2ms | Allocations: 40)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 40.0ms | Allocations: 3603)
+Completed 200 OK in 45ms (Views: 42.9ms | ActiveRecord: 0.0ms | Allocations: 4240)
+
+
+Started GET "/" for ::1 at 2021-08-09 14:30:41 -0700
+Processing by MainController#welcome as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/welcome.html.erb within layouts/application
+  Rendered main/welcome.html.erb within layouts/application (Duration: 0.2ms | Allocations: 38)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.5ms | Allocations: 3534)
+Completed 200 OK in 14ms (Views: 13.3ms | ActiveRecord: 0.0ms | Allocations: 3952)
+
+
+Started GET "/" for ::1 at 2021-08-09 14:30:42 -0700
+Processing by MainController#welcome as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/welcome.html.erb within layouts/application
+  Rendered main/welcome.html.erb within layouts/application (Duration: 0.1ms | Allocations: 38)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.4ms | Allocations: 3534)
+Completed 200 OK in 11ms (Views: 10.0ms | ActiveRecord: 0.0ms | Allocations: 3952)
+
+
+Started GET "/alfonso/movies" for ::1 at 2021-08-09 14:35:53 -0700
+Processing by AlfonsoController#movies as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: alfonso/movies.html.erb (called from movies at /Users/learnacademy/Desktop/database-challenges/our_favorites/app/controllers/alfonso_controller.rb:3)
+  Rendering layout layouts/application.html.erb
+  Rendering alfonso/movies.html.erb within layouts/application
+  Rendered alfonso/movies.html.erb within layouts/application (Duration: 1.6ms | Allocations: 113)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.3ms | Allocations: 3834)
+Completed 200 OK in 26ms (Views: 24.0ms | ActiveRecord: 0.0ms | Allocations: 5208)
+
+
+Started GET "/alfonso" for ::1 at 2021-08-09 14:36:06 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/alfonso"):
+  
+Started GET "/alfonso/movies" for ::1 at 2021-08-09 14:36:08 -0700
+Processing by AlfonsoController#movies as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering alfonso/movies.html.erb within layouts/application
+  Rendered alfonso/movies.html.erb within layouts/application (Duration: 0.2ms | Allocations: 38)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16.1ms | Allocations: 3543)
+Completed 200 OK in 18ms (Views: 17.3ms | ActiveRecord: 0.0ms | Allocations: 3962)
+
+
+Started GET "/alfonso/movies" for ::1 at 2021-08-09 14:37:31 -0700
+Processing by AlfonsoController#movies as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: alfonso/movies.html.erb (called from movies at /Users/learnacademy/Desktop/database-challenges/our_favorites/app/controllers/alfonso_controller.rb:4)
+  Rendering layout layouts/application.html.erb
+  Rendering alfonso/movies.html.erb within layouts/application
+  Rendered alfonso/movies.html.erb within layouts/application (Duration: 0.5ms | Allocations: 137)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.0ms | Allocations: 3848)
+Completed 200 OK in 19ms (Views: 17.7ms | ActiveRecord: 0.0ms | Allocations: 5222)
+
+
+Started GET "/alfonso/movies" for ::1 at 2021-08-09 14:38:26 -0700
+Processing by AlfonsoController#movies as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: alfonso/movies.html.erb (called from movies at /Users/learnacademy/Desktop/database-challenges/our_favorites/app/controllers/alfonso_controller.rb:4)
+  Rendering layout layouts/application.html.erb
+  Rendering alfonso/movies.html.erb within layouts/application
+  Rendered alfonso/movies.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1125)
+  Rendered layout layouts/application.html.erb (Duration: 3.3ms | Allocations: 1195)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms | Allocations: 2517)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Alfonsos top 3 Movies</h1>
+<ul>
+# <%= @movies %>
+<% @movies.map(movie =>{ %>
+
+  <li></li>
+
+<% }) %>
+
+</ul>
+):
+1:    <h1>Alfonsos top 3 Movies</h1>
+2:    <ul>
+3:    # <%= @movies %>
+4:    <% @movies.map(movie =>{ %>
+5:    
+6:      <li></li>
+7:    
+8:    <% }) %>
+9:    
+10:    </ul>
+  
+app/views/alfonso/movies.html.erb:8: syntax error, unexpected ';', expecting =>
+app/views/alfonso/movies.html.erb:8: syntax error, unexpected ';', expecting =>
+app/views/alfonso/movies.html.erb:8: syntax error, unexpected ';', expecting =>
+app/views/alfonso/movies.html.erb:8: syntax error, unexpected ';', expecting =>
+app/views/alfonso/movies.html.erb:8: syntax error, unexpected ';', expecting =>
+app/views/alfonso/movies.html.erb:8: syntax error, unexpected ';', expecting =>
+app/controllers/alfonso_controller.rb:4:in `movies'
+Started GET "/alfonso/movies" for ::1 at 2021-08-09 14:40:00 -0700
+Processing by AlfonsoController#movies as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: alfonso/movies.html.erb (called from movies at /Users/learnacademy/Desktop/database-challenges/our_favorites/app/controllers/alfonso_controller.rb:4)
+  Rendering layout layouts/application.html.erb
+  Rendering alfonso/movies.html.erb within layouts/application
+  Rendered alfonso/movies.html.erb within layouts/application (Duration: 1.3ms | Allocations: 174)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 28.9ms | Allocations: 3917)
+Completed 200 OK in 41ms (Views: 39.8ms | ActiveRecord: 0.0ms | Allocations: 5267)
+
+
+Started GET "/alfonso/movies" for ::1 at 2021-08-09 14:40:15 -0700
+Processing by AlfonsoController#movies as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: alfonso/movies.html.erb (called from movies at /Users/learnacademy/Desktop/database-challenges/our_favorites/app/controllers/alfonso_controller.rb:4)
+  Rendering layout layouts/application.html.erb
+  Rendering alfonso/movies.html.erb within layouts/application
+  Rendered alfonso/movies.html.erb within layouts/application (Duration: 0.9ms | Allocations: 158)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 36.7ms | Allocations: 3900)
+Completed 200 OK in 50ms (Views: 48.2ms | ActiveRecord: 0.0ms | Allocations: 5251)
+
+
+Started GET "/alfonso/movies" for ::1 at 2021-08-09 14:40:33 -0700
+Processing by AlfonsoController#movies as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: alfonso/movies.html.erb (called from movies at /Users/learnacademy/Desktop/database-challenges/our_favorites/app/controllers/alfonso_controller.rb:4)
+  Rendering layout layouts/application.html.erb
+  Rendering alfonso/movies.html.erb within layouts/application
+  Rendered alfonso/movies.html.erb within layouts/application (Duration: 0.7ms | Allocations: 171)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16.1ms | Allocations: 3903)
+Completed 200 OK in 25ms (Views: 24.3ms | ActiveRecord: 0.0ms | Allocations: 5244)
+
+
+Started GET "/alfonso/movies" for ::1 at 2021-08-09 14:40:47 -0700
+Processing by AlfonsoController#movies as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: alfonso/movies.html.erb (called from movies at /Users/learnacademy/Desktop/database-challenges/our_favorites/app/controllers/alfonso_controller.rb:4)
+  Rendering layout layouts/application.html.erb
+  Rendering alfonso/movies.html.erb within layouts/application
+  Rendered alfonso/movies.html.erb within layouts/application (Duration: 1.3ms | Allocations: 170)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 27.3ms | Allocations: 3902)
+Completed 200 OK in 44ms (Views: 42.4ms | ActiveRecord: 0.0ms | Allocations: 5243)
+
+
+Started GET "/alfonso/movies" for ::1 at 2021-08-09 14:40:55 -0700
+Processing by AlfonsoController#movies as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: alfonso/movies.html.erb (called from movies at /Users/learnacademy/Desktop/database-challenges/our_favorites/app/controllers/alfonso_controller.rb:4)
+  Rendering layout layouts/application.html.erb
+  Rendering alfonso/movies.html.erb within layouts/application
+  Rendered alfonso/movies.html.erb within layouts/application (Duration: 0.8ms | Allocations: 169)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16.6ms | Allocations: 3901)
+Completed 200 OK in 26ms (Views: 24.6ms | ActiveRecord: 0.0ms | Allocations: 5242)
+
+
+Started GET "/alfonso/movies" for ::1 at 2021-08-09 14:41:46 -0700
+Processing by AlfonsoController#movies as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: alfonso/movies.html.erb (called from movies at /Users/learnacademy/Desktop/database-challenges/our_favorites/app/controllers/alfonso_controller.rb:4)
+  Rendering layout layouts/application.html.erb
+  Rendering alfonso/movies.html.erb within layouts/application
+  Rendered alfonso/movies.html.erb within layouts/application (Duration: 1.7ms | Allocations: 167)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 28.2ms | Allocations: 3899)
+Completed 200 OK in 42ms (Views: 39.7ms | ActiveRecord: 0.0ms | Allocations: 5240)
+
+
+Started GET "/alfonso/movies" for ::1 at 2021-08-09 14:41:55 -0700
+Processing by AlfonsoController#movies as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: alfonso/movies.html.erb (called from movies at /Users/learnacademy/Desktop/database-challenges/our_favorites/app/controllers/alfonso_controller.rb:4)
+  Rendering layout layouts/application.html.erb
+  Rendering alfonso/movies.html.erb within layouts/application
+  Rendered alfonso/movies.html.erb within layouts/application (Duration: 2.0ms | Allocations: 169)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 19.1ms | Allocations: 3901)
+Completed 200 OK in 31ms (Views: 30.2ms | ActiveRecord: 0.0ms | Allocations: 5242)
+
+
