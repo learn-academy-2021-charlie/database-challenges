@@ -1,0 +1,9 @@
+<p> Heathers top three is </p>
+    <ul>
+        <% @top_3.each do |key,value| %>
+            <li> <%= link_to key, value %> </li>
+        <% end %>
+    </ul>
+
+    <%= link_to "Home", "/" %>
+
