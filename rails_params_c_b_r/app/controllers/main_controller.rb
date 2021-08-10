@@ -14,6 +14,13 @@ class MainController < ApplicationController
         @length = params[:string].length
     end
     def palindrome
+        if params[:string].reverse == params[:string]
+            @result_string = "palindrome"
+        else
+            @result_string = "is not a palindrome"
+        end
+
+            
     end
     def madlib
     end
