@@ -1059,3 +1059,168 @@ Processing by MainController#favorites as HTML
 Completed 200 OK in 15ms (Views: 14.1ms | ActiveRecord: 0.0ms | Allocations: 3971)
 
 
+  [1m[35m (797.2ms)[0m  [1m[35mCREATE DATABASE "our_favorites_development" ENCODING = 'unicode'[0m
+  [1m[35m (538.1ms)[0m  [1m[35mCREATE DATABASE "our_favorites_test" ENCODING = 'unicode'[0m
+Started GET "/" for ::1 at 2021-08-09 16:27:35 -0700
+Processing by MainController#favorites as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/favorites.html.erb (called from favorites at /Users/learn/Desktop/database-challenges/our_favorites/app/controllers/main_controller.rb:3)
+  Rendering layout layouts/application.html.erb
+  Rendering main/favorites.html.erb within layouts/application
+  Rendered main/favorites.html.erb within layouts/application (Duration: 10.0ms | Allocations: 494)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 430.8ms | Allocations: 25273)
+Completed 200 OK in 721ms (Views: 649.6ms | ActiveRecord: 0.0ms | Allocations: 29570)
+
+
+Started GET "/h_favorites" for ::1 at 2021-08-09 16:27:53 -0700
+Processing by HeatherController#favoriteTop3 as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: heather/h_favorites.html.erb (called from favoriteTop3 at /Users/learn/Desktop/database-challenges/our_favorites/app/controllers/heather_controller.rb:4)
+  Rendering layout layouts/application.html.erb
+  Rendering heather/h_favorites.html.erb within layouts/application
+  Rendered heather/h_favorites.html.erb within layouts/application (Duration: 2.7ms | Allocations: 244)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 29.4ms | Allocations: 3778)
+Completed 200 OK in 40ms (Views: 39.3ms | ActiveRecord: 0.0ms | Allocations: 4972)
+
+
+Started GET "/" for ::1 at 2021-08-09 16:30:53 -0700
+Processing by MainController#favorites as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/favorites.html.erb within layouts/application
+  Rendered main/favorites.html.erb within layouts/application (Duration: 0.4ms | Allocations: 59)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 31.9ms | Allocations: 3563)
+Completed 200 OK in 35ms (Views: 33.8ms | ActiveRecord: 0.0ms | Allocations: 3988)
+
+
+Started GET "/h_favorites" for ::1 at 2021-08-09 16:30:55 -0700
+Processing by HeatherController#favoriteTop3 as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering heather/h_favorites.html.erb within layouts/application
+  Rendered heather/h_favorites.html.erb within layouts/application (Duration: 0.2ms | Allocations: 75)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.0ms | Allocations: 3571)
+Completed 200 OK in 21ms (Views: 18.2ms | ActiveRecord: 0.0ms | Allocations: 3998)
+
+
+Started GET "/" for ::1 at 2021-08-09 16:30:57 -0700
+Processing by MainController#favorites as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/favorites.html.erb within layouts/application
+  Rendered main/favorites.html.erb within layouts/application (Duration: 0.2ms | Allocations: 59)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 30.4ms | Allocations: 4156)
+Completed 200 OK in 32ms (Views: 31.4ms | ActiveRecord: 0.0ms | Allocations: 4577)
+
+
+Started GET "/t_favorites" for ::1 at 2021-08-09 16:30:58 -0700
+Processing by TreyController#favoriteTop3 as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: trey/t_favorites.html.erb (called from favoriteTop3 at /Users/learn/Desktop/database-challenges/our_favorites/app/controllers/trey_controller.rb:5)
+  Rendering layout layouts/application.html.erb
+  Rendering trey/t_favorites.html.erb within layouts/application
+  Rendered trey/t_favorites.html.erb within layouts/application (Duration: 1.5ms | Allocations: 227)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 27.9ms | Allocations: 4337)
+Completed 200 OK in 37ms (Views: 36.4ms | ActiveRecord: 0.0ms | Allocations: 5485)
+
+
+Started GET "/" for ::1 at 2021-08-09 16:30:59 -0700
+Processing by MainController#favorites as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/favorites.html.erb within layouts/application
+  Rendered main/favorites.html.erb within layouts/application (Duration: 0.2ms | Allocations: 59)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 31.5ms | Allocations: 4139)
+Completed 200 OK in 33ms (Views: 32.5ms | ActiveRecord: 0.0ms | Allocations: 4561)
+
+
+Started GET "/t_favorites" for ::1 at 2021-08-09 16:31:00 -0700
+Processing by TreyController#favoriteTop3 as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering trey/t_favorites.html.erb within layouts/application
+  Rendered trey/t_favorites.html.erb within layouts/application (Duration: 1.7ms | Allocations: 75)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 59.2ms | Allocations: 4085)
+Completed 200 OK in 62ms (Views: 60.7ms | ActiveRecord: 0.0ms | Allocations: 4594)
+
+
+Started GET "/t_favorites" for ::1 at 2021-08-09 16:31:06 -0700
+Processing by TreyController#favoriteTop3 as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering trey/t_favorites.html.erb within layouts/application
+  Rendered trey/t_favorites.html.erb within layouts/application (Duration: 0.3ms | Allocations: 75)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16.3ms | Allocations: 3571)
+Completed 200 OK in 18ms (Views: 17.5ms | ActiveRecord: 0.0ms | Allocations: 3995)
+
+
+Started GET "/" for ::1 at 2021-08-09 16:39:25 -0700
+Processing by MainController#favorites as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/favorites.html.erb within layouts/application
+  Rendered main/favorites.html.erb within layouts/application (Duration: 0.9ms | Allocations: 60)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 28.4ms | Allocations: 3726)
+Completed 200 OK in 37ms (Views: 33.7ms | Allocations: 4560)
+
+
+Started GET "/h_favorites" for ::1 at 2021-08-09 16:39:27 -0700
+Processing by HeatherController#favoriteTop3 as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering heather/h_favorites.html.erb within layouts/application
+  Rendered heather/h_favorites.html.erb within layouts/application (Duration: 0.4ms | Allocations: 75)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 18.3ms | Allocations: 3571)
+Completed 200 OK in 21ms (Views: 19.7ms | Allocations: 3996)
+
+
+Started GET "/h_favorites" for ::1 at 2021-08-09 16:39:31 -0700
+Processing by HeatherController#favoriteTop3 as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering heather/h_favorites.html.erb within layouts/application
+  Rendered heather/h_favorites.html.erb within layouts/application (Duration: 0.2ms | Allocations: 75)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.3ms | Allocations: 3573)
+Completed 200 OK in 15ms (Views: 14.1ms | Allocations: 3999)
+
+
+Started GET "/" for ::1 at 2021-08-09 16:39:33 -0700
+Processing by MainController#favorites as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/favorites.html.erb within layouts/application
+  Rendered main/favorites.html.erb within layouts/application (Duration: 0.2ms | Allocations: 59)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.5ms | Allocations: 3555)
+Completed 200 OK in 18ms (Views: 16.7ms | Allocations: 3973)
+
+
+Started GET "/t_favorites" for ::1 at 2021-08-09 16:39:34 -0700
+Processing by TreyController#favoriteTop3 as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering trey/t_favorites.html.erb within layouts/application
+  Rendered trey/t_favorites.html.erb within layouts/application (Duration: 0.6ms | Allocations: 75)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 24.0ms | Allocations: 4159)
+Completed 200 OK in 28ms (Views: 26.9ms | Allocations: 4586)
+
+
+Started GET "/t_favorites" for ::1 at 2021-08-09 16:39:38 -0700
+Processing by TreyController#favoriteTop3 as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering trey/t_favorites.html.erb within layouts/application
+  Rendered trey/t_favorites.html.erb within layouts/application (Duration: 0.6ms | Allocations: 75)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.3ms | Allocations: 3571)
+Completed 200 OK in 20ms (Views: 18.9ms | Allocations: 3992)
+
+
+Started GET "/" for ::1 at 2021-08-09 16:39:39 -0700
+Processing by MainController#favorites as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/favorites.html.erb within layouts/application
+  Rendered main/favorites.html.erb within layouts/application (Duration: 0.3ms | Allocations: 59)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 42.3ms | Allocations: 4033)
+Completed 200 OK in 51ms (Views: 49.5ms | Allocations: 4466)
+
+
