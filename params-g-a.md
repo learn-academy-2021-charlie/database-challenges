@@ -41,3 +41,33 @@ in Main/cube.html.erb:
   get 'cubed/:number' => 'main#cube'
 
 ```
+
+#As a user, I can visit a page called evenly that takes two numbers and displays whether or not the first number is evenly divisible by the second
+
+**add evenly_divisble method to controller**
+
+```ruby
+def evenly_divisble
+    @num1 = params[:num1].to_i
+    @num2 = params[:num2].to_i
+    @divisble = @num1 % @num2
+      if @divisble % @num1 === 0
+        @divisble = true
+      else
+        @divisble = false
+      end
+  end
+```
+
+**add evenly_divisble view**
+in Main/evenly_divisble.html.erb
+
+```ruby
+<h1> Evenly divisble: <%= @divisble %></h1>
+```
+
+**add evenly_divisble route**
+
+```ruby
+get '/evenly_divisble/:num1/:num2' => 'main#evenly_divisble'
+````
