@@ -13,4 +13,26 @@ class MainController < ApplicationController
         end
         render 'evenly.html.erb'
     end
+
+    def length
+        @length = params[:string]
+        @characters = params[:string].count(@length)
+    end
+
+    def palindrome
+        @palidrome = params[:string]
+        if params[:string] == params[:string].reverse
+            @result = " is palindrome"
+        else
+            @result = 'is not palindrome'
+    end
+end
+    def madlib
+        @noun = params[:string1]
+        @verb = params[:string2]
+        @adjective = params[:string3]
+        @adverb = params[:string4]
+    end
+
+
 end
