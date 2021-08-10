@@ -182,3 +182,344 @@ DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/
 Completed 200 OK in 25ms (Views: 23.8ms | Allocations: 5274)
 
 
+  [1m[35m (605.9ms)[0m  [1m[35mCREATE DATABASE "our_favorites_development" ENCODING = 'unicode'[0m
+  [1m[35m (303.8ms)[0m  [1m[35mCREATE DATABASE "our_favorites_test" ENCODING = 'unicode'[0m
+Started GET "/" for ::1 at 2021-08-09 15:48:23 -0700
+Processing by MainController#title_subtitle as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/title_subtitle.html.erb (called from title_subtitle at /Users/learnacademy/Desktop/database-challenges/our_favorites/app/controllers/main_controller.rb:5)
+  Rendering layout layouts/application.html.erb
+  Rendering main/title_subtitle.html.erb within layouts/application
+  Rendered main/title_subtitle.html.erb within layouts/application (Duration: 8.1ms | Allocations: 487)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 221.4ms | Allocations: 7627)
+Completed 200 OK in 298ms (Views: 274.5ms | ActiveRecord: 0.0ms | Allocations: 11927)
+
+
+Started GET "/" for ::1 at 2021-08-09 15:52:24 -0700
+Processing by MainController#title_subtitle as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/title_subtitle.html.erb within layouts/application
+  Rendered main/title_subtitle.html.erb within layouts/application (Duration: 1.7ms | Allocations: 43)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 66.9ms | Allocations: 3585)
+Completed 200 OK in 73ms (Views: 69.9ms | ActiveRecord: 0.0ms | Allocations: 4232)
+
+
+Started GET "/marcelo" for ::1 at 2021-08-09 15:52:31 -0700
+  
+ActionController::RoutingError (uninitialized constant MarceloControllerController):
+  
+Started GET "/marcelo" for ::1 at 2021-08-09 15:57:37 -0700
+  
+ArgumentError ('/marcelo' is not a supported controller name. This can lead to potential routing problems. See https://guides.rubyonrails.org/routing.html#specifying-a-controller-to-use):
+  
+config/routes.rb:6:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/marcelo" for ::1 at 2021-08-09 15:58:37 -0700
+  
+SyntaxError (/Users/learnacademy/Desktop/database-challenges/our_favorites/app/controllers/marcelo_controller.rb:5: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/marcelo_controller.rb:5: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/marcelo_controller.rb:5: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/marcelo_controller.rb:5: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/marcelo" for ::1 at 2021-08-09 15:59:04 -0700
+Processing by MarceloController#marcelos_favorite as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.2ms | Allocations: 31)
+Completed 200 OK in 17ms (Views: 15.7ms | ActiveRecord: 0.0ms | Allocations: 725)
+
+
+Started GET "/marcelo" for ::1 at 2021-08-09 16:07:54 -0700
+Processing by MarceloController#marcelos_favorite as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.3ms | Allocations: 27)
+Completed 200 OK in 5ms (Views: 3.3ms | Allocations: 589)
+
+
+Started GET "/marcelo" for ::1 at 2021-08-09 16:08:19 -0700
+Processing by MarceloController#marcelos_favorite as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: marcelo/marcelos_favorites.html.erb (called from marcelos_favorite at /Users/learnacademy/Desktop/database-challenges/our_favorites/app/controllers/marcelo_controller.rb:5)
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: marcelo/marcelos_favorites.html.erb (called from marcelos_favorite at /Users/learnacademy/Desktop/database-challenges/our_favorites/app/controllers/marcelo_controller.rb:5)
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: marcelo/marcelos_favorites.html.erb (called from marcelos_favorite at /Users/learnacademy/Desktop/database-challenges/our_favorites/app/controllers/marcelo_controller.rb:5)
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: application/marcelos_favorites.html.erb (called from marcelos_favorite at /Users/learnacademy/Desktop/database-challenges/our_favorites/app/controllers/marcelo_controller.rb:5)
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: application/marcelos_favorites.html.erb (called from marcelos_favorite at /Users/learnacademy/Desktop/database-challenges/our_favorites/app/controllers/marcelo_controller.rb:5)
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: application/marcelos_favorites.html.erb (called from marcelos_favorite at /Users/learnacademy/Desktop/database-challenges/our_favorites/app/controllers/marcelo_controller.rb:5)
+Completed 500 Internal Server Error in 17ms (Allocations: 2530)
+
+
+  
+ActionView::MissingTemplate (Missing template marcelo/marcelos_favorites.html.erb, application/marcelos_favorites.html.erb with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/learnacademy/Desktop/database-challenges/our_favorites/app/views"
+  * "/Users/learnacademy/.rvm/gems/ruby-3.0.0/gems/actiontext-6.1.4/app/views"
+  * "/Users/learnacademy/.rvm/gems/ruby-3.0.0/gems/actionmailbox-6.1.4/app/views"
+):
+  
+app/controllers/marcelo_controller.rb:5:in `marcelos_favorite'
+Started GET "/marcelo" for ::1 at 2021-08-09 16:10:01 -0700
+  
+SyntaxError (/Users/learnacademy/Desktop/database-challenges/our_favorites/app/controllers/marcelo_controller.rb:3: syntax error, unexpected local variable or method, expecting `end'
+        @m_title = 'Marcelo's top 3 favorite things are'
+                            ^
+/Users/learnacademy/Desktop/database-challenges/our_favorites/app/controllers/marcelo_controller.rb:3: syntax error, unexpected local variable or method, expecting `end'
+...tle = 'Marcelo's top 3 favorite things are'
+...                       ^~~~~~~~
+/Users/learnacademy/Desktop/database-challenges/our_favorites/app/controllers/marcelo_controller.rb:4: syntax error, unexpected constant, expecting `end'
+        @mfavorites = ['The Beach','Bento','Coffee']
+                        ^~~
+/Users/learnacademy/Desktop/database-challenges/our_favorites/app/controllers/marcelo_controller.rb:4: syntax error, unexpected constant, expecting `end'
+...favorites = ['The Beach','Bento','Coffee']
+...                          ^~~~~
+/Users/learnacademy/Desktop/database-challenges/our_favorites/app/controllers/marcelo_controller.rb:4: syntax error, unexpected constant, expecting `end'
+... = ['The Beach','Bento','Coffee']
+...                         ^~~~~~
+/Users/learnacademy/Desktop/database-challenges/our_favorites/app/controllers/marcelo_controller.rb:5: syntax error, unexpected local variable or method, expecting `end'
+...     render 'marcelos_favorites.html.erb'
+...             ^~~~~~~~~~~~~~~~~~
+/Users/learnacademy/Desktop/database-challenges/our_favorites/app/controllers/marcelo_controller.rb:7: unterminated string meets end of file
+/Users/learnacademy/Desktop/database-challenges/our_favorites/app/controllers/marcelo_controller.rb:7: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/marcelo_controller.rb:3: syntax error, unexpected local variable or method, expecting `end'
+app/controllers/marcelo_controller.rb:3: syntax error, unexpected local variable or method, expecting `end'
+app/controllers/marcelo_controller.rb:4: syntax error, unexpected constant, expecting `end'
+app/controllers/marcelo_controller.rb:4: syntax error, unexpected constant, expecting `end'
+app/controllers/marcelo_controller.rb:4: syntax error, unexpected constant, expecting `end'
+app/controllers/marcelo_controller.rb:5: syntax error, unexpected local variable or method, expecting `end'
+app/controllers/marcelo_controller.rb:7: unterminated string meets end of file
+app/controllers/marcelo_controller.rb:7: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/marcelo_controller.rb:3: syntax error, unexpected local variable or method, expecting `end'
+app/controllers/marcelo_controller.rb:3: syntax error, unexpected local variable or method, expecting `end'
+app/controllers/marcelo_controller.rb:4: syntax error, unexpected constant, expecting `end'
+app/controllers/marcelo_controller.rb:4: syntax error, unexpected constant, expecting `end'
+app/controllers/marcelo_controller.rb:4: syntax error, unexpected constant, expecting `end'
+app/controllers/marcelo_controller.rb:5: syntax error, unexpected local variable or method, expecting `end'
+app/controllers/marcelo_controller.rb:7: unterminated string meets end of file
+app/controllers/marcelo_controller.rb:7: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/marcelo_controller.rb:3: syntax error, unexpected local variable or method, expecting `end'
+app/controllers/marcelo_controller.rb:3: syntax error, unexpected local variable or method, expecting `end'
+app/controllers/marcelo_controller.rb:4: syntax error, unexpected constant, expecting `end'
+app/controllers/marcelo_controller.rb:4: syntax error, unexpected constant, expecting `end'
+app/controllers/marcelo_controller.rb:4: syntax error, unexpected constant, expecting `end'
+app/controllers/marcelo_controller.rb:5: syntax error, unexpected local variable or method, expecting `end'
+app/controllers/marcelo_controller.rb:7: unterminated string meets end of file
+app/controllers/marcelo_controller.rb:7: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/marcelo" for ::1 at 2021-08-09 16:10:29 -0700
+Processing by MarceloController#marcelos_favorite as HTML
+Completed 500 Internal Server Error in 3ms (Allocations: 1009)
+
+
+  
+ActionView::MissingTemplate (Missing template marcelo/marcelos_favorites.html.erb, application/marcelos_favorites.html.erb with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/learnacademy/Desktop/database-challenges/our_favorites/app/views"
+  * "/Users/learnacademy/.rvm/gems/ruby-3.0.0/gems/actiontext-6.1.4/app/views"
+  * "/Users/learnacademy/.rvm/gems/ruby-3.0.0/gems/actionmailbox-6.1.4/app/views"
+):
+  
+app/controllers/marcelo_controller.rb:5:in `marcelos_favorite'
+Started GET "/marcelo" for ::1 at 2021-08-09 16:11:57 -0700
+Processing by MarceloController#marcelos_favorite as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: marcelo/marcelos_favorites.html.erb (called from marcelos_favorite at /Users/learnacademy/Desktop/database-challenges/our_favorites/app/controllers/marcelo_controller.rb:5)
+  Rendering layout layouts/application.html.erb
+  Rendering marcelo/marcelos_favorites.html.erb within layouts/application
+  Rendered marcelo/marcelos_favorites.html.erb within layouts/application (Duration: 1.0ms | Allocations: 183)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 18.9ms | Allocations: 3929)
+Completed 200 OK in 27ms (Views: 26.5ms | Allocations: 5278)
+
+
+Started GET "/marcelo" for ::1 at 2021-08-09 16:19:11 -0700
+Processing by MarceloController#marcelos_favorite as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: marcelo/marcelos_favorites.html.erb (called from marcelos_favorite at /Users/learnacademy/Desktop/database-challenges/our_favorites/app/controllers/marcelo_controller.rb:5)
+  Rendering layout layouts/application.html.erb
+  Rendering marcelo/marcelos_favorites.html.erb within layouts/application
+  Rendered marcelo/marcelos_favorites.html.erb within layouts/application (Duration: 1.0ms | Allocations: 182)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 18.5ms | Allocations: 3893)
+Completed 200 OK in 25ms (Views: 24.6ms | Allocations: 5263)
+
+
+Started GET "/andy" for ::1 at 2021-08-09 16:19:17 -0700
+Processing by AndyController#andys_favorite as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: andy/andys_favorites.html.erb (called from andys_favorite at /Users/learnacademy/Desktop/database-challenges/our_favorites/app/controllers/andy_controller.rb:5)
+  Rendering layout layouts/application.html.erb
+  Rendering andy/andys_favorites.html.erb within layouts/application
+  Rendered andy/andys_favorites.html.erb within layouts/application (Duration: 1.1ms | Allocations: 181)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.0ms | Allocations: 3744)
+Completed 200 OK in 22ms (Views: 21.4ms | Allocations: 4898)
+
+
+Started GET "/andy" for ::1 at 2021-08-09 16:19:52 -0700
+Processing by AndyController#andys_favorite as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: andy/andys_favorites.html.erb (called from andys_favorite at /Users/learnacademy/Desktop/database-challenges/our_favorites/app/controllers/andy_controller.rb:5)
+  Rendering layout layouts/application.html.erb
+  Rendering andy/andys_favorites.html.erb within layouts/application
+  Rendered andy/andys_favorites.html.erb within layouts/application (Duration: 1.1ms | Allocations: 182)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 20.7ms | Allocations: 3915)
+Completed 200 OK in 31ms (Views: 28.5ms | Allocations: 5255)
+
+
+Started GET "/andy" for ::1 at 2021-08-09 16:21:00 -0700
+Processing by AndyController#andys_favorite as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: andy/andys_favorites.html.erb (called from andys_favorite at /Users/learnacademy/Desktop/database-challenges/our_favorites/app/controllers/andy_controller.rb:5)
+  Rendering layout layouts/application.html.erb
+  Rendering andy/andys_favorites.html.erb within layouts/application
+  Rendered andy/andys_favorites.html.erb within layouts/application (Duration: 1.1ms | Allocations: 185)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 23.0ms | Allocations: 3933)
+Completed 200 OK in 38ms (Views: 36.7ms | Allocations: 5314)
+
+
+Started GET "/andy" for ::1 at 2021-08-09 16:29:41 -0700
+Processing by AndyController#andys_favorite as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: andy/andys_favorites.html.erb (called from andys_favorite at /Users/learnacademy/Desktop/database-challenges/our_favorites/app/controllers/andy_controller.rb:5)
+  Rendering layout layouts/application.html.erb
+  Rendering andy/andys_favorites.html.erb within layouts/application
+  Rendered andy/andys_favorites.html.erb within layouts/application (Duration: 1.0ms | Allocations: 215)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 29.8ms | Allocations: 3944)
+Completed 200 OK in 40ms (Views: 38.2ms | Allocations: 5285)
+
+
+Started GET "/" for ::1 at 2021-08-09 16:29:43 -0700
+Processing by MainController#title_subtitle as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/title_subtitle.html.erb (called from title_subtitle at /Users/learnacademy/Desktop/database-challenges/our_favorites/app/controllers/main_controller.rb:5)
+  Rendering layout layouts/application.html.erb
+  Rendering main/title_subtitle.html.erb within layouts/application
+  Rendered main/title_subtitle.html.erb within layouts/application (Duration: 3.2ms | Allocations: 181)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 34.5ms | Allocations: 3704)
+Completed 200 OK in 49ms (Views: 48.0ms | Allocations: 5396)
+
+
+Started GET "/marcelo" for ::1 at 2021-08-09 16:30:34 -0700
+Processing by MarceloController#marcelos_favorite as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: marcelo/marcelos_favorites.html.erb (called from marcelos_favorite at /Users/learnacademy/Desktop/database-challenges/our_favorites/app/controllers/marcelo_controller.rb:5)
+  Rendering layout layouts/application.html.erb
+  Rendering marcelo/marcelos_favorites.html.erb within layouts/application
+  Rendered marcelo/marcelos_favorites.html.erb within layouts/application (Duration: 2.2ms | Allocations: 181)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16.3ms | Allocations: 3742)
+Completed 200 OK in 23ms (Views: 22.2ms | Allocations: 4863)
+
+
+Started GET "/marcelo" for ::1 at 2021-08-09 16:30:54 -0700
+Processing by MarceloController#marcelos_favorite as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: marcelo/marcelos_favorites.html.erb (called from marcelos_favorite at /Users/learnacademy/Desktop/database-challenges/our_favorites/app/controllers/marcelo_controller.rb:5)
+  Rendering layout layouts/application.html.erb
+  Rendering marcelo/marcelos_favorites.html.erb within layouts/application
+  Rendered marcelo/marcelos_favorites.html.erb within layouts/application (Duration: 18.7ms | Allocations: 213)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 91.3ms | Allocations: 3956)
+Completed 200 OK in 122ms (Views: 120.5ms | Allocations: 5305)
+
+
+Started GET "/" for ::1 at 2021-08-09 16:30:55 -0700
+Processing by MainController#title_subtitle as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/title_subtitle.html.erb (called from title_subtitle at /Users/learnacademy/Desktop/database-challenges/our_favorites/app/controllers/main_controller.rb:5)
+  Rendering layout layouts/application.html.erb
+  Rendering main/title_subtitle.html.erb within layouts/application
+  Rendered main/title_subtitle.html.erb within layouts/application (Duration: 1.1ms | Allocations: 200)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 22.2ms | Allocations: 3878)
+Completed 200 OK in 33ms (Views: 31.7ms | Allocations: 5445)
+
+
+Started GET "/" for ::1 at 2021-08-09 16:37:51 -0700
+Processing by MainController#title_subtitle as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/title_subtitle.html.erb (called from title_subtitle at /Users/learnacademy/Desktop/database-challenges/our_favorites/app/controllers/main_controller.rb:5)
+  Rendering layout layouts/application.html.erb
+  Rendering main/title_subtitle.html.erb within layouts/application
+  Rendered main/title_subtitle.html.erb within layouts/application (Duration: 0.9ms | Allocations: 181)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.0ms | Allocations: 3913)
+Completed 200 OK in 21ms (Views: 20.6ms | Allocations: 5253)
+
+
+Started GET "/marcelo" for ::1 at 2021-08-09 16:37:57 -0700
+Processing by MarceloController#marcelos_favorite as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: marcelo/marcelos_favorites.html.erb (called from marcelos_favorite at /Users/learnacademy/Desktop/database-challenges/our_favorites/app/controllers/marcelo_controller.rb:5)
+  Rendering layout layouts/application.html.erb
+  Rendering marcelo/marcelos_favorites.html.erb within layouts/application
+  Rendered marcelo/marcelos_favorites.html.erb within layouts/application (Duration: 1.5ms | Allocations: 215)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.2ms | Allocations: 3773)
+Completed 200 OK in 28ms (Views: 26.6ms | Allocations: 4892)
+
+
+Started GET "/marcelo" for ::1 at 2021-08-09 16:41:40 -0700
+Processing by MarceloController#marcelos_favorite as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: marcelo/marcelos_favorites.html.erb (called from marcelos_favorite at /Users/learnacademy/Desktop/database-challenges/our_favorites/app/controllers/marcelo_controller.rb:5)
+  Rendering layout layouts/application.html.erb
+  Rendering marcelo/marcelos_favorites.html.erb within layouts/application
+  Rendered marcelo/marcelos_favorites.html.erb within layouts/application (Duration: 1.3ms | Allocations: 237)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16.2ms | Allocations: 3966)
+Completed 200 OK in 22ms (Views: 21.2ms | Allocations: 5307)
+
+
+Started GET "/" for ::1 at 2021-08-09 16:41:43 -0700
+Processing by MainController#title_subtitle as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/title_subtitle.html.erb (called from title_subtitle at /Users/learnacademy/Desktop/database-challenges/our_favorites/app/controllers/main_controller.rb:5)
+  Rendering layout layouts/application.html.erb
+  Rendering main/title_subtitle.html.erb within layouts/application
+  Rendered main/title_subtitle.html.erb within layouts/application (Duration: 2.1ms | Allocations: 209)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 24.1ms | Allocations: 4337)
+Completed 200 OK in 33ms (Views: 31.3ms | Allocations: 5458)
+
+
+Started GET "/" for ::1 at 2021-08-09 16:44:43 -0700
+Processing by MainController#title_subtitle as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/title_subtitle.html.erb (called from title_subtitle at /Users/learnacademy/Desktop/database-challenges/our_favorites/app/controllers/main_controller.rb:5)
+  Rendering layout layouts/application.html.erb
+  Rendering main/title_subtitle.html.erb within layouts/application
+  Rendered main/title_subtitle.html.erb within layouts/application (Duration: 0.8ms | Allocations: 186)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.7ms | Allocations: 3932)
+Completed 200 OK in 22ms (Views: 20.9ms | Allocations: 5282)
+
+
+Started GET "/marcelo" for ::1 at 2021-08-09 16:44:53 -0700
+Processing by MarceloController#marcelos_favorite as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: marcelo/marcelos_favorites.html.erb (called from marcelos_favorite at /Users/learnacademy/Desktop/database-challenges/our_favorites/app/controllers/marcelo_controller.rb:5)
+  Rendering layout layouts/application.html.erb
+  Rendering marcelo/marcelos_favorites.html.erb within layouts/application
+  Rendered marcelo/marcelos_favorites.html.erb within layouts/application (Duration: 1.1ms | Allocations: 238)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.9ms | Allocations: 3796)
+Completed 200 OK in 22ms (Views: 21.1ms | Allocations: 4918)
+
+
+Started GET "/The%20Beach" for ::1 at 2021-08-09 16:44:58 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/The%20Beach"):
+  
+Started GET "/The%20Beach" for ::1 at 2021-08-09 16:50:42 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/The%20Beach"):
+  
+Started GET "/marcelo" for ::1 at 2021-08-09 16:50:46 -0700
+Processing by MarceloController#marcelos_favorite as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: marcelo/marcelos_favorites.html.erb (called from marcelos_favorite at /Users/learnacademy/Desktop/database-challenges/our_favorites/app/controllers/marcelo_controller.rb:5)
+  Rendering layout layouts/application.html.erb
+  Rendering marcelo/marcelos_favorites.html.erb within layouts/application
+  Rendered marcelo/marcelos_favorites.html.erb within layouts/application (Duration: 5.5ms | Allocations: 2253)
+  Rendered layout layouts/application.html.erb (Duration: 6.1ms | Allocations: 2322)
+Completed 500 Internal Server Error in 14ms (Allocations: 3642)
+
+
+  
+ActionView::Template::Error (undefined method `lowercase' for "The Beach":String):
+    2: 
+    3: <ul>
+    4:     <% @mfavorites.each do |value| %>
+    5:         <li> <%= link_to value, "/#{value.lowercase}"  %> </li>
+    6:     <% end %>
+    7: </ul>
+    8: 
+  
+app/views/marcelo/marcelos_favorites.html.erb:5
+app/views/marcelo/marcelos_favorites.html.erb:4:in `each'
+app/views/marcelo/marcelos_favorites.html.erb:4
+app/controllers/marcelo_controller.rb:5:in `marcelos_favorite'

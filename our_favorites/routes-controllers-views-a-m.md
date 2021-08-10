@@ -59,7 +59,35 @@ Created our .erb file
 
 As a user, I can see a list of each team member's top three things. (Could be top three restaurants, activities, books, video games, hiking locations, beaches, doughnut shoppes, movies, etc.)
 
+first we made our method containing our title and an array of our 3 favorite things insid the controller file
+```
+/andys_controller
+ def andys_favorite
+        @a_title = "Andy's top 3 favorite things are"
+        @mfavorites = ['The Beach','My Dogs','Coffee']
+        render 'andys_favorites.html.erb'
+    end
+```
+next we set up our route
+```
+/config/routes
+
+  get '/andy' => 'andy#andys_favorite'
+```
+next we set up our new folders inside of the views folder for our seperate controllers  erb file containing our erb code and html 
+```
+/views/andy
+<h1>  <%= @a_title %> </h1> 
+
+<ul>
+    <% @mfavorites.each do |value| %>
+        <li> <%= value %> </li>
+    <% end %>
+</ul>
+```
+
 As a user, I can see that each of the list items are links.
+
 As a user, I can click on a link and be take to a page where I can see more information about that particular list item.
 HINT: Use the appropriate controller for each teammate. Create methods for each list item. Create view files in the corresponding view folder.
 As a user, I can return to the landing page from any of the other pages.

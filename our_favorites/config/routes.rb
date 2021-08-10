@@ -3,5 +3,6 @@ Rails.application.routes.draw do
   # get '/' => 'main#title' -- same as above
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 
-
+  get '/marcelo' => 'marcelo#marcelos_favorite'
+  get '/andy' => 'andy#andys_favorite'
 end
